@@ -57,6 +57,9 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{lipsum}
 \usepackage{epigraph}
 \usepackage{caption}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage[toc,page]{appendix}
 
 \setlength\epigraphwidth{.8\textwidth}
 \setlength\epigraphrule{0pt}
@@ -260,19 +263,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 \include{Chapters/Chapter4} 
 \include{Chapters/Chapter5}
 \include{Chapters/Chapter6}
-
-%----------------------------------------------------------------------------------------
-%	THESIS CONTENT - APPENDICES
-%----------------------------------------------------------------------------------------
-
-\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
-
-% Include the appendices of the thesis as separate files from the Appendices folder
-% Uncomment the lines as you write the Appendices
-
-\include{Appendices/AppendixA}
-%\include{Appendices/AppendixB}
-%\include{Appendices/AppendixC}
+\include{Chapters/Appendices}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
