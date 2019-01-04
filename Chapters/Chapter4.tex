@@ -9,7 +9,55 @@
 \section{Introduction}
 \textcolor{red}{RB: If this paper is published before submitting - put paragraph similar to the one in Chapter 3 here!}
 
-In \citet{Booth_etal_2017} a steepening of the age-activity relationship was found using X-ray observations coupled to asteroseismic ages. While this study provided the first step to studying the X-ray luminosity-age relationship beyond a gigayear, using the X-ray luminosity as a magnetic activity indicator may not be the most accessible indicator as it requires significant observational resources on an X-ray telescope. An alternative magnetic activity indicator is chromospheric emission in spectral lines such as \caII or H$-\alpha$. Particularly for exoplanet host stars, spectra are usually obtained to confirm the presence of candidate exoplanets through measurement of radial velocity. 
+In \citet{Booth_etal_2017} a steepening of the age-activity relationship was found using X-ray observations coupled to asteroseismic ages. While this study provided the first step to studying the X-ray luminosity-age relationship beyond a gigayear, using the X-ray luminosity as a magnetic activity indicator may not be the most accessible indicator as it requires significant observational resources on an X-ray telescope. An alternative magnetic activity indicator is chromospheric emission in spectral lines such as \caII or H$-\alpha$. Particularly for exoplanet host stars, optical spectra are usually obtained to confirm the presence of candidate exoplanets through radial velocity measurements; therefore making chromospheric emission a much more commonly used magnetic activity indicator.
+
+Chromospheric emission is a widely used activity indicator, particularly for the age-activity relationship and there have been several studies in recent years that use this indicator to calibrate the relationship. However, some debate remains over the suitability of chromospheric emission seen in \caII lines as an age indicator for older stars (i.e. $> 1$ Gyr). \citet{Pace_2013} shows an L-shaped age-activity plot and suggested that the evolution of the chromospheric emission in the \caII lines stopped relatively early. On the contrary, \citet{Lorenzo_Oliveira_etal_2016} showed that when the mass and metallicity of the star is taken into account, chromospheric ages show good agreement with asteroseismic ages. Yet, both of these studies use isochronal ages to calibrate their relationships, asteroseismic ages have not been studied in relation to the chromospheric emission - age relationship. Therefore, the aim of this work was to investigate the age-activity relationship beyond a gigayear using chromospheric emission as a magnetic activity indicator coupled with asteroseismic ages to help shed light on its suitability as an age indicator.
+
+\textcolor{red}{Insert description of each section - so that I can explain that most of the work is focused on Ca but did some analysis on H-alpha}
+
+\section{Observations}
+\subsection{Sample selection}
+The sample considered in this work were selected from stars studied by \citet{Bruntt_etal_2012}, who performed a detailed spectral study aided by asteroseismic data for 93 solar-type stars observed with \textit{Kepler}. For the purposes of studying the magnetic activity of old stars, the sample was restricted to stars with an outer convective envelope, are on the main sequence and have an asteroseismically determined age.
+
+In order to select stars with an outer convective envelope, the effective temperature was required to be less than 6500 K, equivalent to spectral type F5V. Stars with spectral types earlier than F5V do not have a substantial outer convective envelope that is required for the solar-like dynamo process \citep{Pinsonneault_etal_2001}. Therefore, these stars are not expected to spin-down via magnetic braking during their main sequence lifetime or follow the same age-activity relationship as lower-mass stars. However, there is some observational evidence that hotter stars can occasionally display magnetic activity features as well; for example, weak X-ray emission was detected from the A7V star Altair \citep{Robrade_Schmitt_2009}. Therefore, data analysis was performed on all main sequence stars in the sample spanning the full effective temperature range of ca. 5000-6900 K, but stars with effective temperatures greater than 6500 K are displayed separately in tables and figures.
+
+Stars that have significantly evolved off the main sequence are expected to have different rotational and magnetic evolution, therefore only stars that are still on the main sequence should be included in the age-activity analysis. To ensure that the stars in the sample were on the main sequence, their surface gravities \citep{Bruntt_etal_2012} from asteroseismology (\textcolor{red}{Triple check I used the Brunnt log(g) asteroseismic values} to the relation between $B-V$ colour and surface gravity for main sequence stars as given by \citet{Gray_2005} and shown in Equation \ref{Eq:Gray_2005}. Stars with surface gravities that differed by more than 0.2 dex were excluded from the sample.
+
+Stellar ages from asteroseismology were collected from the literature. In particular, ages from \citet{Silva_Aguirre_etal_2017} were used for the majority of the sample, where stellar ages were obtained by modelling the individual oscillation frequencies in the spectrum observed by the \textit{Kepler} satellite. Some ages were also taken from \citet{Chaplin_etal_2014}, where stellar properties were estimated using two global asteroseismic parameters and complementary photometric and spectroscopic data.
+
+\subsection{Spectra}
+The spectra used in this study stem from \citet{Bruntt_etal_2012}. The spectra were obtained with the \esp spectrograph at the 3.6 m Canada-France-Hawaii Telescope (CFHT; \citealt{Donati_etal_2006}) and the \narval spectrograph \citep{Auriere_2003} mounted on the 2 m Bernard Lyot Telescope at the Pic du Midi Observatory. These spectra cover a spectral range of ${\thicksim} 3700$ to ${\thicksim} 10480$ \AA. In this work, the reduced spectra by \citet{Bruntt_etal_2012} was used which was received through personal communication. In \citet{Bruntt_etal_2012}, standard pipeline-reduced spectra were normalised using \texttt{RAINBOW} \citep{Bruntt_etal_2010} which allows manual normalisation of the spectra. The continua were adjusted by comparing with a synthetic spectrum and overlapping regions of spectral orders were checked so that both the line depths and continuum level matched.
+
+Additional archival observations were used to investigate the level of long-term variability of the \Rprime indicator due to potential magnetic activity cycles (see Section REF). Pipeline-reduced spectra were obtained directly from the \esp archive\footnote{\url{http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/}}.
+
+In the following sections (i.e Sections \ref{Chp4_data_analysis}, \ref{Chp4_results} and \ref{Chp4_discussion}), the focus will be on the data analysis, results and discussion of the chromospheric emission from the \caII spectral lines.
+
+\section{Data Analysis}
+\label{Chp4_data_analysis}
+
+In this section, the process to extract the chromospheric emission from the \caII lines is described. It details the processing of the spectra data, the calibration of the emission to the Mount Wilson S index and how the final \Rprime indicator value was calculated. Section \ref{Chp4_halpha} will discuss the analysis performed on the H-$\alpha$ spectral line.
+
+\subsection{Doppler correction}
+The first step in the data analysis was to correct for any Doppler shift present in the stellar spectrum. Doppler shifts in spectra are a common occurrence in astronomical spectra due to the relative motions of stars and is seen as a change in the wavelength that spectral lines are observed at. Since the relative motions of each of the stars is slightly different, then the core of the \caII lines (where the chromospheric emission is observed) will be observed at slightly different wavelengths. In order to analyse the correct part of the spectral lines the Doppler shift must be accounted for; this is achieved by comparing all spectra to one master spectrum and adjusting the wavelength scale so that spectral line coincide at the same wavelength.
+
+A master spectrum was selected by considering the signal to noise ratio (hereafter SNR) in the 3850 to 4050 \AA wavelength region. The SNR was calculated using Equation \ref{Eq:SNR_ratio} where $\bar{f}$ is the mean flux value and $\sigma_{f}$ is the standard deviation of the flux in the relevant wavelength region. The spectrum with the largest SNR value was chosen as the master spectrum to which all other spectra were compared to; the master spectra were KIC 9226926 and KIC 3733735 for the \narval and \esp spectra, respectively.
+
+\begin{equation}
+SNR = \frac{\bar{f}}{\sigma_{f}}
+\label{Eq:SNR_ratio}
+\end{equation}
+
+A cross correlation function was then used to compare each of the spectra to the master spectrum; this function measures the similarity of a spectrum to the master spectrum as a function of the relative displacement. The maximum of the cross correlation function was then used to determine the relative displacement that must be taken into account for the two spectra to be aligned. The relative displacement was applied to the spectrum, allowing analysis of the \caII lines using the same wavelength regions for all spectra. An additional manual wavelength correction was applied to the spectra in order to to compensate for any Doppler shift that was present in the master spectrum. This was $-0.2$ \AA for the \esp data; the \narval data did not require this manual correction.
+
+\subsection{Normalisation of continuum}
+
+
+
+
+
+
+
+\subsection{Calculation of S index}
 
 
 
@@ -19,9 +67,111 @@ In \citet{Booth_etal_2017} a steepening of the age-activity relationship was fou
 
 
 
-ocities
+\subsection{Calibration to $S_{MW}$ and calculation of \Rprime}
 
- vel
+
+
+
+
+
+
+
+
+\section{Results}
+\label{Chp4_results}
+
+\subsection{Calcium chromospheric emission with age}
+
+
+
+
+
+
+
+\subsection{Comparison with M67}
+
+
+
+
+
+
+
+
+
+\subsection{Variability of stars}
+
+
+
+
+
+
+
+
+
+\subsection{Planet-hosting stars}
+
+
+
+
+
+
+
+
+
+\section{Discussion}
+\label{Chp4_discussion}
+
+\subsection{Comparison to existing relations}
+
+
+
+
+
+
+
+\subsection{Spin-down in context of observational data}
+
+
+
+
+
+
+
+
+
+\subsection{Chromospheric activity as an age indicator}
+
+
+
+
+
+
+
+
+
+\subsection{Discrepancy between cluster stars and asteroseismic sample}
+
+
+
+
+
+
+
+
+
+\section{H-$\alpha$ analysis and discussion}
+\label{Chp4_halpha}
+
+
+
+
+
+
+
+
+\section{Conclusions}
+
+
 
 
 
