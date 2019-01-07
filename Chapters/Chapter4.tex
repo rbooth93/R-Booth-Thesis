@@ -38,6 +38,7 @@ In the following sections (i.e Sections \ref{Chp4_data_analysis}, \ref{Chp4_resu
 In this section, the process to extract the chromospheric emission from the \caII lines is described. It details the processing of the spectra data, the calibration of the emission to the Mount Wilson S index and how the final \Rprime indicator value was calculated. Section \ref{Chp4_halpha} will discuss the analysis performed on the H-$\alpha$ spectral line.
 
 \subsection{Doppler correction}
+\label{Chp4_data_analysis_doppler}
 The first step in the data analysis was to correct for any Doppler shift present in the stellar spectrum. Doppler shifts in spectra are a common occurrence in astronomical spectra due to the relative motions of stars and is seen as a change in the wavelength that spectral lines are observed at. Since the relative motions of each of the stars is slightly different, then the core of the \caII lines (where the chromospheric emission is observed) will be observed at slightly different wavelengths. In order to analyse the correct part of the spectral lines the Doppler shift must be accounted for; this is achieved by comparing all spectra to one master spectrum and adjusting the wavelength scale so that spectral line coincide at the same wavelength.
 
 A master spectrum was selected by considering the signal to noise ratio (hereafter SNR) in the 3850 to 4050 \AA wavelength region. The SNR was calculated using Equation \ref{Eq:SNR_ratio} where $\bar{f}$ is the mean flux value and $\sigma_{f}$ is the standard deviation of the flux in the relevant wavelength region. The spectrum with the largest SNR value was chosen as the master spectrum to which all other spectra were compared to; the master spectra were KIC 9226926 and KIC 3733735 for the \narval and \esp spectra, respectively.
@@ -47,48 +48,97 @@ SNR = \frac{\bar{f}}{\sigma_{f}}
 \label{Eq:SNR_ratio}
 \end{equation}
 
-A cross correlation function was then used to compare each of the spectra to the master spectrum; this function measures the similarity of a spectrum to the master spectrum as a function of the relative displacement. The maximum of the cross correlation function was then used to determine the relative displacement that must be taken into account for the two spectra to be aligned. The relative displacement was applied to the spectrum, allowing analysis of the \caII lines using the same wavelength regions for all spectra. An additional manual wavelength correction was applied to the spectra in order to to compensate for any Doppler shift that was present in the master spectrum. This was $-0.2$ \AA for the \esp data; the \narval data did not require this manual correction.
+A cross correlation function was then used to compare each of the spectra to the master spectrum; this function measures the similarity of a spectrum to the master spectrum as a function of the relative displacement. The maximum of the cross correlation function was then used to determine the relative displacement that must be taken into account for the two spectra to be aligned. The relative displacement was applied to the spectrum, allowing analysis of the \caII lines using the same wavelength regions for all spectra. An additional manual wavelength correction was applied to the spectra in order to to compensate for any Doppler shift that was present in the master spectrum. This was $-0.2$ \space \AA for the \esp data; the \narval data did not require this manual correction.
 
 \subsection{Normalisation of continuum}
+\label{Chp4_data_analysis_normalise_cont}
+Before the \Rprime indicator could be calculated, the spectra were required to be normalised as there was a discontinuity in the continuum at the \caII wavelengths. This is shown in the top panel of Figure \ref{fig:normlisation_example}; the flux in the overlapping region match reasonably well, but the continuum level flux level is higher in the K order than the H order. This would have an effect on the chromospheric emission measurement as the method used (see Section \ref{Chp4_data_analysis_calc_S}) requires the flux measured in the core of the \caII lines to be normalised by the flux continuum in two reference channels.
 
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.40]{Figures/4-Chromospheric_age/kic9139163_example.pdf}
+    \caption[Example of optical spectra in \caII region and the normalisation method]{\textbf{Top panel:} Spectrum of KIC 9139163 showing the two adjacent spectral orders that contain the \caII lines. While the overlapping region of the orders match, there is a clear discontinuity in the continuum flux level.
+    \textbf{Middle panel:} Plots of the two comparison regions in the K order (left) and H order (right). The markers denote the maximum flux values in each bin of width 1.5 \AA. The red line denotes the best-fitting linear relationship that is used to normalise the spectrum.
+    \textbf{Bottom panel:} Spectrum of KIC 9139163 with correction factor applied to the K order. The discontinuity in the continuum flux level is no longer present. The four channels used to calculate the S index are also shown.}
+    \label{fig:normlisation_example}
+\end{figure}
 
-
-
-
-
+This was corrected by considering two comparison regions in each spectral order; from 3900 - 3915 \AA \space and 3945 - 3955 \AA \space in the shorter-wavelength order of the spectrum (containing the Ca~II K line) and from 3945 - 3955 \AA \space and 3990 - 4005 \AA \space in the longer-wavelength order of the spectrum (containing the Ca~II H line) as shown in the middle panel of Figure \ref{fig:normlisation_example}. The local continuum level was estimated in those regions by splitting the spectrum into bins of 1.5 \AA \space width and measuring the local maximum in each of the bins (see Figure \ref{fig:normlisation_example}). These data points were used to find the best-fitting linear relationship as indicated by the red line in the middle panel of Figure \ref{fig:normlisation_example}. The spectra were then normalised according to this best fitting relationship so that the typical continuum flux value in each order was approximately one.
 
 \subsection{Calculation of S index}
+\label{Chp4_data_analysis_calc_S}
+The S index is an activity indicator that uses four channels to quantify the chromospheric emission in the core of the \caII lines. Two channels are 1.09 \AA \space wide and centred on 3968.47 and 3933.664 \AA \space for the \caII cores, respectively. The other two channels are 20 \AA \space wide and are centred on 3901.07 and 4001.07 \AA; named the V and R channels respectively. These channels are shown in the bottom panel of Figure \ref{fig:normlisation_example} and follow the channels defined by \citet{Lovis_etal_2011} with the exception that the triangular-shaped profile to the H and K channels are not included in this analysis.
+
+The S index is calculated using Equation \ref{Eq:sindex} where $N_{x}$ is the total flux in the relevant channel. The error associated with $N_{x}$ is calculated using Equation \eqref{Eq:sindex_error} where $x_{n}$ is the error on the individual flux data point and $i$ is the total number of data points in the wavelength channel. These errors associated with $N_{x}$ were then propagated in order to calculate the error associated with the S index.
+
+\begin{equation}
+S = \frac{N_{H} + N_{K}}{N_{R} + N_{V}}
+\label{Eq:sindex}
+\end{equation}
+
+\begin{equation}
+\sigma_{N_{x}} = \sqrt{\sum_{n=1}^{i} x_{n}^{2}}
+\label{Eq:sindex_error}
+\end{equation}
+
+
+\subsection{Calibration to \texorpdfstring{\Smw}{Smw} and calculating the \texorpdfstring{\Rprime}{Rprime} indicator}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=0.75]{Figures/4-Chromospheric_age/espadons_calibrator_reltionship.pdf}
+        \caption{\esp Calibrators}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=0.75]{Figures/4-Chromospheric_age/narval_calibrator_reltionship.pdf}
+        \caption{\narval Calibrators}
+    \end{subfigure}
+    \caption{Plots showing the average \Smw \citep{Duncan_etal_1991} against the S index calculated from the \esp/\narval spectrographs for the calibrator stars. The black line indicates the best-fitting linear relationship between the two parameters.}
+    \label{fig:calibrator_relationships_Smw}
+\end{figure}
+
+The method that is used to calculate the \Rprime indicator (\citealt{Noyes_etal_1984}; see Section \ref{chromospheric_emission_subsub}) requires the Mount Wilson S index (\Smw), which differs slightly from the S index calculated for the sample of stars considered in this work. The S index calculated in any spectrum (regardless of the exact method used) is dependent on the spectral resolution and the throughput of the spectrograph used. therefore it was necessary to determine a relationship between the S index calculated from the spectrographs used in this work (\esp and \narval) and \Smw. This was achieved by searching for stars from \citet{Duncan_etal_1991} in the \esp and \narval archives. \citet{Duncan_etal_1991} summarises measurements of \caII emission at the Mount Wilson Observatory from 1966 - 1983, thus providing a large sample of stars with measured \Smw values. The comparison sample was restricted to have the same range of spectral type as used in the analysis of old inactive stars, i.e. from spectral type F5 to late K. The stars from \citet{Duncan_etal_1991} with archival observations from \esp and \narval were Doppler corrected and normalised using the sample method as the main sample (see Section \ref{Chp4_data_analysis_doppler} and \ref{Chp4_data_analysis_normalise_cont}). The master spectra for Doppler correction were HD 89449 and HD 126660 for \esp and \narval data, respectively. The manual wavelength shift was -0.14 and +0.1 \AA \space for the \esp and \narval data, respectively. The full list of stars and values used to calibrate the two relationships are shown in Appendix \ref{App_calibrator_stars_Smw}.
 
 
 
+The S index was calculated for these calibrator stars as described in Section \ref{Chp4_data_analysis_calc_S} and plotted against the mean \Smw from \citet{Duncan_etal_1991} (shown in Figure \ref{fig:calibrator_relationships_Smw}). Since the sample considered in this work contains weakly inactive stars older than a gigayear, we restricted the calibrator star sample to S index values less than 0.2 and \Smw values less than 0.5. A linear least-squares regression was applied to the data to find the best-fitting relationship between the two indices, which are shown in Equations \ref{Eq:esp_calibrator_eq} and \ref{Eq:nar_calibrator_eq}. These equations were used to calculate the \Smw for our sample of stars with asteroseismic ages.
 
+\begin{equation}
+S_{MW} = 17.67 \cdot S_{\mathrm{ESPaDOnS}}+ 0.025
+\label{Eq:esp_calibrator_eq}
+\end{equation}
 
+\begin{equation}
+S_{MW} = 18.53 \cdot S_{\mathrm{NARVAL}} + 0.023
+\label{Eq:nar_calibrator_eq}
+\end{equation} 
 
-
-
-
-\subsection{Calibration to $S_{MW}$ and calculation of \Rprime}
-
-
-
-
-
-
-
-
+Using the \Smw values calculated from the calibration relationships, the \Rprime indicator was calculated using the original method by \citet{Noyes_etal_1984} (see Section \ref{chromospheric_emission_subsub}).
 
 \section{Results}
 \label{Chp4_results}
 
 \subsection{Calcium chromospheric emission with age}
+The chromospheric emission from \caII lines was measured for a sample of 26 stars with asteroseismic ages. The sample contains primarily F and G stars, as well as one K star.
+
+In Figure \ref{fig:calcium_emission_plot}, the \Rprime activity indicator is plotted as a function of stellar age. The data points are colour-coded according to their spectral type; G and K stars are displayed in green and orange, respectively, while mid to late F stars (with effective temperatures below 6500 K) are displayed in blue. Earlier F stars with effective temperatures between 6500 K and 6900 K are displayed in red; these stars are separated from the later F stars due to the very thin outer convective zone present in these earlier type stars and thus are not expected to spin down in the same manner as the rest of the sample.
+
+\begin{figure}[h]
+	\includegraphics[width=0.99\textwidth]{Figures/4-Chromospheric_age/ca_results_with_clusters.pdf}
+	\caption{Plot showing data analysed in this work alongside cluster data from \citet{Mamajek_Hillenbrand_2008} shown in black. The average solar value over several cycles is also shown \citep{Egeland_etal_2017}.}
+	\centering
+	\label{fig:calcium_emission_plot}
+\end{figure}
+
+The full details for each star are given in Appendix REF. Three stars (KIC 5774694, KIC 9139163 and KIC 10454113) had observations from both of the spectrographs considered in this work (\esp and \narval). For simplicity, only the \narval data for these stars are shown in Figure \ref{fig:calcium_emission_plot} as these have smaller associated errors in the activity measurement. 
 
 
 
 
-
-
-
-\subsection{Comparison with M67}
+\subsection{Comparison with clusters}
 
 
 
