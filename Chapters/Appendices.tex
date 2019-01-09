@@ -123,10 +123,9 @@
 \chapter{Stellar properties of X-ray sample}
 \label{App_Xray_sample_stellar_properties}
 
-\begin{table}[h]
+\begin{table}[h!]
 \centering
-\begin{minipage}{\textwidth}
-\resizebox{\textwidth}{!}{
+\resizebox{0.95\textwidth}{!}{
 	\begin{tabular}[h]{l l l l l l}
 		\hline \hline
 		Name of Star / White Dwarf & Radius / $R_{\odot}$ & $T_{eff}$ / K & $V_{mag}$ & Distance / pc & References\\
@@ -163,24 +162,35 @@
 	\textbf{References}: (1) \citet{Silva_Aguirre_etal_2017}; (2) \citet{Silva_Aguirre_etal_2015}; (3) this work, radius recalculated with BASTA algorithm \citep{Silva_Aguirre_etal_2015} using values from \citet{Chaplin_etal_2014} and  \citet{Buchhave_Latham_2015}; (4) \citet{Kervella_etal_2008}; (5) Radius calculated from $T_{eff}$ and absolute brightness; (6) $T_{eff}$ estimated from Spectral Type using Table 5 from \citet{Pecaut_Mamajek_2013}; (7) \citet{Chaplin_etal_2014}
 	(8) $V_{mag}$ from SIMBAD; (9) Parallax from SIMBAD; (10) Parallax from \textit{Gaia} DR1 \citep{Gaia_Collaboration_2016_DR1}; (11) Distance from Barnes-Evans method (see Section \ref{Section_Xray_distances_and_spectype} for details); (12) \citet{DeWarf_etal_2010}
 	\end{footnotesize}}
-	
-	
-
-\end{minipage}
 \end{table}
+\clearpage
 
 %Appendix D
 \chapter{Stars used to calibrate to \texorpdfstring{\Smw}{Smw} index}
 \label{App_calibrator_stars_Smw}
 
 %ESPADONS TABLE
-\begin{table}[h]
-\begin{minipage}{\textwidth}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{llccc}
+\begin{longtable}{llccc}
+\caption[\esp calibrator stars for \Smw relationship]{List of calibrator stars \citep{Duncan_etal_1991} used to calibrate the relationship between the S index calculated from \esp spectra and \Smw. Spectral types and $B-V$ taken from SIMBAD \citep{Wenger_etal_2000}.}\\
+
 \hline
-Star Name          & Spectral Type & $B-V$  & Average \Smw & \esp S Index \\
+Star Name         & Spectral Type & $B-V$  & Average \Smw & \esp S Index \\
 \hline
+\endfirsthead
+
+\hline
+Star Name         & Spectral Type & $B-V$  & Average \Smw & \esp S Index \\
+\hline
+\endhead
+
+\hline
+\endfoot
+ 
+\hline
+\endlastfoot
+
+\renewcommand{\arraystretch}{1.2}
+
 Cl Melotte 22 1613 & G0            & 0.54 & 0.3077 & $0.0119^{0.0006}_{0.0006}$\\
 HD 124897          & K1.5III       & 1.23 & 0.1441 & $0.0075^{0.0001}_{0.0001}$\\
 HD 144579          & G8V           & 0.73 & 0.1628 & $0.0081^{0.0005}_{0.0005}$\\
@@ -208,22 +218,30 @@ HD 89449           & F6IV-V        & 0.44 & 0.1781 & $0.0078^{0.0001}_{0.0001}$\
 HD 98736		   & G5			   & 0.84 & 0.1940 & $0.0096^{0.0001}_{0.0001}$\\
 Parenago 1394	   & F8			   & 0.48 & 0.2635 & $0.0141^{0.0003}_{0.0003}$\\
 \hline
-\end{tabular}}
-\caption{List of calibrator stars \citep{Duncan_etal_1991} used to calibrate the relationship between the S index calculated from \esp spectra and \Smw. Spectral types and $B-V$ taken from SIMBAD \citep{Wenger_etal_2000}.}
-\end{minipage}
-\end{table}
-
-\clearpage
-\newpage
+\end{longtable}
 
 %NARVAL TABLE
-\begin{table}[h]
-\begin{minipage}{\textwidth}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{llccc}
+\begin{longtable}{llccc}
+\caption[\narval calibrator stars for \Smw relationship]{List of calibrator stars \citep{Duncan_etal_1991} used to calibrate the relationship between the S index calculated from \narval spectra and \Smw. Spectral types and $B-V$ taken from SIMBAD \citep{Wenger_etal_2000}.}\\
+
 \hline
 Star Name         & Spectral Type & $B-V$  & Average \Smw & \narval S Index \\
 \hline
+\endfirsthead
+
+\hline
+Star Name         & Spectral Type & $B-V$  & Average \Smw & \narval S Index \\
+\hline
+\endhead
+
+\hline
+\endfoot
+ 
+\hline
+\endlastfoot
+
+\renewcommand{\arraystretch}{1.2}
+
 Cl Melotte 111 58 & F7V           & 0.45 & 0.2903        & $0.0159^{0.0002}_{0.0002}$ \\
 Cl Melotte 111 97 & F9V           & 0.55 & 0.2978        & $0.0169^{0.0002}_{0.0002}$ \\
 HD 103095         & K1V           & 0.75 & 0.1828        & $0.0093^{0.0001}_{0.0001}$ \\
@@ -263,37 +281,35 @@ HD 42807          & G2V           & 0.68 & 0.3518        & $0.0166^{0.0004}_{0.0
 HD 4614           & F9V+M0-V      & 0.58 & 0.1596        & $0.0073^{0.00002}_{0.00002}$ \\
 HD 82885          & G8Va          & 0.77 & 0.3082        & $0.0152^{0.0002}_{0.0002}$ \\
 HD 9927           & K3-III        & 1.28 & 0.1167        & $0.0061^{0.0002}_{0.0002}$ \\
-\hline
-\end{tabular}}
-\caption{List of calibrator stars \citep{Duncan_etal_1991} used to calibrate the relationship between the S index calculated from \narval spectra and \Smw. Spectral types and $B-V$ taken from SIMBAD \citep{Wenger_etal_2000}.}
-\end{minipage}
-\end{table}
+
+\end{longtable}
 
 \clearpage
 \newpage
 
 %Appendix E
 \chapter{\texorpdfstring{\Rprime}{Rprime} and age results}
-\label{calcium_results}
+\label{App_calcium_results}
 
 %Hot stars table
 \begin{table}
 \centering
 \rotatebox{90}{
-\begin{minipage}{\textheight}
+\begin{minipage}{0.99\textheight}
 \resizebox{\textheight}{!}{
+\renewcommand{\arraystretch}{1.2}
 \begin{tabular}{llcccccccccl}
 \hline
 Star Name    & Spectral Type & [Fe/H] & M / $M_{\odot}$ & $B-V$  & $T_{eff}$ / K & $log(g)$ & Age / Gyr & 	S Index      & \Smw  & $log(R^{'}_{HK})$ & Spectrograph \\
 \hline
 KIC 9226926  & F5V           & -0.23 & $1.39^{0.05}_{0.04}$ & 0.41 & 6892 & $4.14$   & $2.20^{0.30}_{0.30}$ \footnote{Age and mass taken from \citet{Chaplin_etal_2014}\label{C14}}      & 0.0089 & 0.1876 & $-4.797^{0.012}_{0.012}$ & \narval       \\
-KIC 3733735  & F5IV-V        & -0.04 & $1.39^{0.04}_{0.05}$ & 0.43 & 6715 & $4.26$   & $0.80^{0.40}_{0.40}$ \footref{C14}      & 0.0074 & 0.1549 & $-4.983^{0.041}_{0.045}$ & \esp          \\
+KIC 3733735  & F5IV-V        & -0.04 & $1.39^{0.04}_{0.05}$ & 0.43 & 6715 & $4.26$   & $0.80^{0.40}_{0.40}^{\ref{C14}}$      & 0.0074 & 0.1549 & $-4.983^{0.041}_{0.045}$ & \esp          \\
 KIC 2837475  & F5IV-V        & -0.02 & $1.43^{0.02}_{0.02}$ & 0.45 & 6700 & $4.16$   & $1.63^{0.18}_{0.18}$ \footnote{Age and mass taken from \citet{Silva_Aguirre_etal_2017}\label{A17}}      & 0.0076 & 0.1584 & $-4.956^{0.040}_{0.043}$ & \esp          \\
-KIC 7529180  & F5IV-V        & -0.02 & $1.39^{0.04}_{0.03}$ & 0.42 & 6700 & $4.23$   & $1.30^{0.30}_{0.30}$ \footref{C14}      & 0.0091 & 0.1918 & $-4.775^{0.008}_{0.008}$ & \narval       \\
-KIC 9206432  & F8IV          & 0.23 & $1.38^{0.04}_{0.02}$ & 0.44 & 6608 & $4.23$   & $1.53^{0.30}_{0.30}$ \footref{A17}      & 0.0057 & 0.1248 & $-5.290^{0.103}_{0.135}$ & \esp          \\
-KIC 11253226 & F5IV-V        & -0.08 & $1.41^{0.02}_{0.01}$ & 0.39 & 6605 & $4.16$   & $1.60^{0.13}_{0.13}$ \footref{A17}      & 0.0073 & 0.1547 & $-4.999^{0.044}_{0.049}$ & \esp          \\
-KIC 1430163  & F5IV          & -0.11 & $1.34^{0.06}_{0.06}$ & 0.49 & 6520 & $4.22$   & $1.90^{0.60}_{0.50}$ \footref{C14}      & 0.0078 & 0.1675 & $-4.899^{0.023}_{0.024}$ & \narval       \\
-KIC 10709834 & F5IV-V        & -0.08 & $1.39^{0.04}_{0.03}$ & 0.44 & 6508 & $4.09$   & $2.80^{0.40}_{0.40}$ \footref{C14}      & 0.0084 & 0.1784 & $-4.837^{0.027}_{0.028}$ & \narval       \\
+KIC 7529180  & F5IV-V        & -0.02 & $1.39^{0.04}_{0.03}$ & 0.42 & 6700 & $4.23$   & $1.30^{0.30}_{0.30}^{\ref{C14}}$      & 0.0091 & 0.1918 & $-4.775^{0.008}_{0.008}$ & \narval       \\
+KIC 9206432  & F8IV          & 0.23 & $1.38^{0.04}_{0.02}$ & 0.44 & 6608 & $4.23$   & $1.53^{0.30}_{0.30}^{\ref{A17}}$      & 0.0057 & 0.1248 & $-5.290^{0.103}_{0.135}$ & \esp          \\
+KIC 11253226 & F5IV-V        & -0.08 & $1.41^{0.02}_{0.01}$ & 0.39 & 6605 & $4.16$   & $1.60^{0.13}_{0.13}^{\ref{A17}}$      & 0.0073 & 0.1547 & $-4.999^{0.044}_{0.049}$ & \esp          \\
+KIC 1430163  & F5IV          & -0.11 & $1.34^{0.06}_{0.06}$ & 0.49 & 6520 & $4.22$   & $1.90^{0.60}_{0.50}^{\ref{C14}}$      & 0.0078 & 0.1675 & $-4.899^{0.023}_{0.024}$ & \narval       \\
+KIC 10709834 & F5IV-V        & -0.08 & $1.39^{0.04}_{0.03}$ & 0.44 & 6508 & $4.09$   & $2.80^{0.40}_{0.40}^{\ref{C14}}$      & 0.0084 & 0.1784 & $-4.837^{0.027}_{0.028}$ & \narval       \\
 \hline
 \end{tabular}}
 \caption{Results for stars with effective temperatures greater than 6500 K as shown in Figure \ref{fig:calcium_emission_plot}. Spectral types and $B-V$ taken from SIMBAD \citep{Wenger_etal_2000}. Metallicity and surface gravity taken from \citet{Bruntt_etal_2012}. Surface gravity and ages taken from asteroseismology studies \citep{Chaplin_etal_2014,Silva_Aguirre_etal_2017}.}
@@ -310,31 +326,32 @@ KIC 10709834 & F5IV-V        & -0.08 & $1.39^{0.04}_{0.03}$ & 0.44 & 6508 & $4.0
 \rotatebox{90}{
 \begin{minipage}{\textheight}
 \resizebox{\textheight}{!}{
+\renewcommand{\arraystretch}{1.2}
 \begin{tabular}{llcccccccccl}
 \hline
 Star Name    & Spectral Type & [Fe/H] & M / $M_{\odot}$ & $B-V$  & $T_{eff}$ / K & $log(g)$ & Age / Gyr & 	S Index      & \Smw  & $log(R^{'}_{HK})$ & Spectrograph \\
 \hline
 KIC 9139163  & F8IV          & 0.15 & $1.40^{0.03}_{0.02}$ & 0.48 & 6400 & $4.18$   & $1.60^{0.22}_{0.22}$ \footnote{Age and mass taken from \citet{Silva_Aguirre_etal_2017}\label{A17}}      & 0.0055 & 0.1226 & $-5.321^{0.074}_{0.088}$ & \esp          \\
-KIC 9139163  & F8IV          & 0.15 & $1.40^{0.03}_{0.02}$ & 0.48 & 6400 & $4.18$   & $1.60^{0.22}_{0.22}$ \footref{A17}      & 0.0064 & 0.1412 & $-5.095^{0.025}_{0.027}$ & \narval       \\
-KIC 8179536  & F6IV          & 0.01 & $1.16^{0.05}_{0.06}$ & 0.50 & 6344 & $4.27$   & $3.54^{0.81}_{0.81}$ \footref{A17}      & 0.0075 & 0.1617 & $-4.937^{0.036}_{0.039}$ & \narval       \\
+KIC 9139163  & F8IV          & 0.15 & $1.40^{0.03}_{0.02}$ & 0.48 & 6400 & $4.18$   & $1.60^{0.22}_{0.22}^{\ref{A17}}$      & 0.0064 & 0.1412 & $-5.095^{0.025}_{0.027}$ & \narval       \\
+KIC 8179536  & F6IV          & 0.01 & $1.16^{0.05}_{0.06}$ & 0.50 & 6344 & $4.27$   & $3.54^{0.81}_{0.81}^{\ref{A17}}$      & 0.0075 & 0.1617 & $-4.937^{0.036}_{0.039}$ & \narval       \\
 KIC 10016239 & F6IV          & -0.05 & $1.23^{0.05}_{0.05}$ & 0.54 & 6340 & $4.31$   & $1.80^{0.80}_{0.70}$ \footnote{Age and mass taken from \citet{Chaplin_etal_2014}\label{C14}}      & 0.0065 & 0.1430 & $-5.090^{0.055}_{0.063}$ & \narval       \\
-KIC 7206837  & F8IV          & 0.14 & $1.30^{0.03}_{0.03}$ & 0.46 & 6304 & $4.17$   & $2.90^{0.30}_{0.30}$ \footref{A17}      & 0.0071 & 0.1540 & $-4.987^{0.054}_{0.062}$ & \narval       \\
-KIC 1435467  & F8IV          & -0.01 & $1.32^{0.03}_{0.05}$ & 0.43 & 6264 & $4.09$   & $3.02^{0.35}_{0.35}$ \footref{A17}      & 0.0068 & 0.1486 & $-5.033^{0.018}_{0.018}$ & \narval       \\
-KIC 6225718  & F8V           & -0.17 & $1.16^{0.03}_{0.03}$ & 0.50 & 6230 & $4.32$   & $2.41^{0.43}_{0.43}$ \footref{A17}      & 0.0063 & 0.1397 & $-5.111^{0.030}_{0.032}$ & \narval       \\
-KIC 10462940 & G0.5IV        & 0.10 & $1.20^{0.07}_{0.06}$ & 0.56 & 6154 & $4.32$   & $2.50^{1.10}_{1.10}$ \footref{C14}      & 0.0071 & 0.1540 & $-5.006^{0.038}_{0.041}$ & \narval       \\
-KIC 9139151  & G0.5IV        & 0.11 & $1.18^{0.04}_{0.05}$ & 0.51 & 6125 & $4.38$   & $1.32^{0.75}_{0.75}$ \footref{A17}      & 0.0068 & 0.1473 & $-5.061^{0.064}_{0.074}$ & \esp          \\
-KIC 10454113 & F9IV-V        & -0.06 & $1.17^{0.02}_{0.03}$ & 0.52 & 6120 & $4.31$   & $2.89^{0.53}_{0.53}$ \footref{A17}      & 0.0082 & 0.1698 & $-4.891^{0.030}_{0.032}$ & \esp          \\
-KIC 10454113 & F9IV-V        & -0.06 & $1.17^{0.02}_{0.03}$ & 0.52 & 6120 & $4.31$   & $2.89^{0.53}_{0.53}$ \footref{A17}      & 0.0078 & 0.1678 & $-4.903^{0.025}_{0.027}$ & \narval       \\
-KIC 8694723  & G0IV          & -0.59 & $1.14^{0.02}_{0.02}$ & 0.46 & 6120 & $4.10$   & $4.69^{0.51}_{0.51}$ \footref{A17}      & 0.0063 & 0.1398 & $-5.108^{0.031}_{0.033}$ & \narval       \\
-KIC 8394589  & F8V           & -0.36 & $1.04^{0.04}_{0.03}$ & 0.55 & 6114 & $4.32$   & $4.45^{0.83}_{0.83}$ \footref{A17}      & 0.0069 & 0.1507 & $-5.028^{0.040}_{0.043}$ & \narval       \\
-KIC 10963065 & F8V           & -0.2 & $0.99^{0.06}_{0.06}$ & 0.51 & 6060 & $4.29$   & $7.15^{1.61}_{1.61}$ \footref{A17}      & 0.0064 & 0.1423 & $-5.089^{0.024}_{0.025}$ & \narval       \\
-KIC 6106415  & G0            & -0.09 & $1.07^{0.05}_{0.04}$ & 0.55 & 5990 & $4.31$   & $5.03^{1.12}_{1.12}$ \footref{A17}      & 0.0066 & 0.1447 & $-5.078^{0.022}_{0.023}$ & \narval       \\
-KIC 6116048  & F9IV-V        & -0.24 & $0.94^{0.05}_{0.05}$ & 0.59 & 5935 & $4.28$   & $9.58^{1.90}_{1.90}$ \footref{A17}      & 0.0062 & 0.1345 & $-5.186^{0.055}_{0.063}$ & \esp          \\
-KIC 5774694  & G3V           & 0.07 & $1.06^{0.05}_{0.06}$ & 0.64 & 5875 & $4.47$   & $1.90^{1.90}_{1.60}$ \footref{C14}      & 0.0139 & 0.2714 & $-4.575^{0.024}_{0.025}$ & \esp          \\
-KIC 5774694  & G3V           & 0.07 & $1.06^{0.05}_{0.06}$ & 0.64 & 5875 & $4.47$   & $1.90^{1.90}_{1.60}$ \footref{C14}      & 0.0141 & 0.2839 & $-4.546^{0.009}_{0.009}$ & \narval       \\
-KIC 8760414  & G0IV          & -1.14 & $0.81^{0.03}_{0.02}$ & 0.52 & 5787 & $4.33$   & $11.66^{1.61}_{1.61}$  \footref{A17}    & 0.0069 & 0.1516 & $-5.013^{0.037}_{0.040}$ & \narval       \\
-KIC 9955598  & K0V           & 0.11 & $0.90^{0.04}_{0.03}$ & 0.72 & 5410 & $4.48$   & $6.29^{1.84}_{1.84}$ \footref{A17}      & 0.0083 & 0.1763 & $-4.934^{0.042}_{0.046}$& \narval       \\
-KIC 7970740  & G9V           & -0.49 & $0.73^{0.03}_{0.01}$ & 0.74 & 5290 & $4.58$   & $12.98^{2.00}_{2.00}$ \footref{A17}     & 0.0074 & 0.151 & $-5.050^{0.070}_{0.081}$ & \esp          \\
+KIC 7206837  & F8IV          & 0.14 & $1.30^{0.03}_{0.03}$ & 0.46 & 6304 & $4.17$   & $2.90^{0.30}_{0.30}^{\ref{A17}}$      & 0.0071 & 0.1540 & $-4.987^{0.054}_{0.062}$ & \narval       \\
+KIC 1435467  & F8IV          & -0.01 & $1.32^{0.03}_{0.05}$ & 0.43 & 6264 & $4.09$   & $3.02^{0.35}_{0.35}^{\ref{A17}}$      & 0.0068 & 0.1486 & $-5.033^{0.018}_{0.018}$ & \narval       \\
+KIC 6225718  & F8V           & -0.17 & $1.16^{0.03}_{0.03}$ & 0.50 & 6230 & $4.32$   & $2.41^{0.43}_{0.43}^{\ref{A17}}$      & 0.0063 & 0.1397 & $-5.111^{0.030}_{0.032}$ & \narval       \\
+KIC 10462940 & G0.5IV        & 0.10 & $1.20^{0.07}_{0.06}$ & 0.56 & 6154 & $4.32$   & $2.50^{1.10}_{1.10}^{\ref{C14}}$      & 0.0071 & 0.1540 & $-5.006^{0.038}_{0.041}$ & \narval       \\
+KIC 9139151  & G0.5IV        & 0.11 & $1.18^{0.04}_{0.05}$ & 0.51 & 6125 & $4.38$   & $1.32^{0.75}_{0.75}^{\ref{A17}}$      & 0.0068 & 0.1473 & $-5.061^{0.064}_{0.074}$ & \esp          \\
+KIC 10454113 & F9IV-V        & -0.06 & $1.17^{0.02}_{0.03}$ & 0.52 & 6120 & $4.31$   & $2.89^{0.53}_{0.53}^{\ref{A17}}$      & 0.0082 & 0.1698 & $-4.891^{0.030}_{0.032}$ & \esp          \\
+KIC 10454113 & F9IV-V        & -0.06 & $1.17^{0.02}_{0.03}$ & 0.52 & 6120 & $4.31$   & $2.89^{0.53}_{0.53}^{\ref{A17}}$      & 0.0078 & 0.1678 & $-4.903^{0.025}_{0.027}$ & \narval       \\
+KIC 8694723  & G0IV          & -0.59 & $1.14^{0.02}_{0.02}$ & 0.46 & 6120 & $4.10$   & $4.69^{0.51}_{0.51}^{\ref{A17}}$      & 0.0063 & 0.1398 & $-5.108^{0.031}_{0.033}$ & \narval       \\
+KIC 8394589  & F8V           & -0.36 & $1.04^{0.04}_{0.03}$ & 0.55 & 6114 & $4.32$   & $4.45^{0.83}_{0.83}^{\ref{A17}}$      & 0.0069 & 0.1507 & $-5.028^{0.040}_{0.043}$ & \narval       \\
+KIC 10963065 & F8V           & -0.2 & $0.99^{0.06}_{0.06}$ & 0.51 & 6060 & $4.29$   & $7.15^{1.61}_{1.61}^{\ref{A17}}$      & 0.0064 & 0.1423 & $-5.089^{0.024}_{0.025}$ & \narval       \\
+KIC 6106415  & G0            & -0.09 & $1.07^{0.05}_{0.04}$ & 0.55 & 5990 & $4.31$   & $5.03^{1.12}_{1.12}^{\ref{A17}}$      & 0.0066 & 0.1447 & $-5.078^{0.022}_{0.023}$ & \narval       \\
+KIC 6116048  & F9IV-V        & -0.24 & $0.94^{0.05}_{0.05}$ & 0.59 & 5935 & $4.28$   & $9.58^{1.90}_{1.90}^{\ref{A17}}$      & 0.0062 & 0.1345 & $-5.186^{0.055}_{0.063}$ & \esp          \\
+KIC 5774694  & G3V           & 0.07 & $1.06^{0.05}_{0.06}$ & 0.64 & 5875 & $4.47$   & $1.90^{1.90}_{1.60}^{\ref{C14}}$      & 0.0139 & 0.2714 & $-4.575^{0.024}_{0.025}$ & \esp          \\
+KIC 5774694  & G3V           & 0.07 & $1.06^{0.05}_{0.06}$ & 0.64 & 5875 & $4.47$   & $1.90^{1.90}_{1.60}^{\ref{C14}}$      & 0.0141 & 0.2839 & $-4.546^{0.009}_{0.009}$ & \narval       \\
+KIC 8760414  & G0IV          & -1.14 & $0.81^{0.03}_{0.02}$ & 0.52 & 5787 & $4.33$   & $11.66^{1.61}_{1.61}^{\ref{A17}}$    & 0.0069 & 0.1516 & $-5.013^{0.037}_{0.040}$ & \narval       \\
+KIC 9955598  & K0V           & 0.11 & $0.90^{0.04}_{0.03}$ & 0.72 & 5410 & $4.48$   & $6.29^{1.84}_{1.84}^{\ref{A17}}$      & 0.0083 & 0.1763 & $-4.934^{0.042}_{0.046}$& \narval       \\
+KIC 7970740  & G9V           & -0.49 & $0.73^{0.03}_{0.01}$ & 0.74 & 5290 & $4.58$   & $12.98^{2.00}_{2.00}^{\ref{A17}}$     & 0.0074 & 0.151 & $-5.050^{0.070}_{0.081}$ & \esp          \\
 \hline
 \end{tabular}}
 \caption{Results for stars with effective temperatures less than 6500 K as shown in Figure \ref{fig:calcium_emission_plot}. Spectral types and $B-V$ taken from SIMBAD \citep{Wenger_etal_2000}. Metallicity and surface gravity taken from \citet{Bruntt_etal_2012}. Surface gravity and ages taken from asteroseismology studies \citep{Chaplin_etal_2014,Silva_Aguirre_etal_2017}.}
@@ -343,12 +360,76 @@ KIC 7970740  & G9V           & -0.49 & $0.73^{0.03}_{0.01}$ & 0.74 & 5290 & $4.5
 
 \clearpage
 
+%Appendix F
+\chapter{Results from multiple observations}
+\label{App_ca_multiple_obs_tables}
+%Hot Stars > 6500K
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{llllll}
+\hline
+Star Name    & Spectrograph & Year & S Index  & \Smw   & $log(R^{'}_{HK})$   \\
+\hline
+KIC 2837475  & \esp         & 2015 & 0.007 & 0.172 & $-4.873^{0.038}_{0.041}$\\
+KIC 2837475  & \esp         & 2010 & 0.007 & 0.163 & $-4.925^{0.025}_{0.026}$\\
+KIC 2837475  & \esp         & 2014 & 0.008 & 0.181 & $-4.821^{0.024}_{0.025}$\\
+KIC 3733735  & \esp         & 2010 & 0.007 & 0.167 & $-4.904^{0.023}_{0.024}$\\
+KIC 3733735  & \esp         & 2015 & 0.008 & 0.183 & $-4.815^{0.031}_{0.033}$\\
+KIC 9206432  & \esp         & 2014 & 0.006 & 0.152 & $-5.000^{0.030}_{0.032}$\\
+KIC 9206432  & \esp         & 2010 & 0.005 & 0.128 & $-5.244^{0.060}_{0.069}$\\
+KIC 9226926  & \esp         & 2014 & 0.009 & 0.205 & $-4.721^{0.015}_{0.015}$\\
+KIC 9226926  & \narval      & 2010 & 0.008 & 0.194 & $-4.768^{0.009}_{0.009}$\\
+KIC 10709834 & \narval      & 2010 & 0.008 & 0.194 & $-4.760^{0.017}_{0.018}$\\
+KIC 10709834 & \esp         & 2015 & 0.007 & 0.171 & $-4.877^{0.051}_{0.057}$\\
+KIC 11253226 & \esp         & 2010 & 0.007 & 0.165 & $-4.926^{0.025}_{0.026}$\\
+KIC 11253226 & \esp         & 2014 & 0.008 & 0.183 & $-4.826^{0.021}_{0.022}$\\
+\hline
+\end{tabular}
+\caption{Results of stars with multiple epoch observations from \esp archive and $T_{eff} > 6500$ K.}
+\end{table}
 
+%Cool Stars <6500K
+%\begin{minipage}{\linewidth}
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{llllll}
+\hline
+Star Name    & Spectrograph & Year & S Index      & \Smw & $log(R^{'}_{HK})$ \\
+\hline
+KIC 6106415  & \narval       & 2010 & 0.006 & 0.15  & $-5.035^{0.016}_{0.017}$\\
+             & \esp          & 2014 & 0.007 & 0.164 & $-4.935^{0.021}_{0.022}$\\
+KIC 6225718  & \narval       & 2010 & 0.006 & 0.152 & $-5.004^{0.018}_{0.019}$\\
+             & \esp          & 2014 & 0.007 & 0.159 & $-4.953^{0.034}_{0.037}$\\
+KIC 8694723  & \narval       & 2010 & 0.006 & 0.15  & $-5.015^{0.020}_{0.021}$\\
+             & \esp          & 2014 & 0.007 & 0.164 & $-4.917^{0.023}_{0.025}$\\
+KIC 9139151  & \esp          & 2010 & 0.006 & 0.14  & $-5.106^{0.045}_{0.050}$\\
+             & \esp          & 2014 & 0.007 & 0.168 & $-4.899^{0.035}_{0.038}$\\
+KIC 9955598  & \narval       & 2010 & 0.006 & 0.148 & $-5.090^{0.041}_{0.045}$\\
+             & \esp          & 2013 & 0.008 & 0.185 & $-4.896^{0.009}_{0.009}$\\
+KIC 10454113 & \narval       & 2010 & 0.007 & 0.169 & $-4.895^{0.019}_{0.020}$\\
+             & \esp          & 2014 & 0.007 & 0.161 & $-4.944^{0.036}_{0.039}$\\
+             & \esp          & 2016 & 0.007 & 0.176 & $-4.859^{0.007}_{0.007}$\\
+KIC 10963065 & \narval       & 2010 & 0.006 & 0.148 & $-5.036^{0.016}_{0.017}$\\
+             & \esp          & 2013 & 0.006 & 0.152 & $-5.004^{0.007}_{0.007}$\\
+\hline
+\end{tabular}
+\caption{Results of stars with multiple epoch observations from \esp archive and $T_{eff} < 6500$ K.}
+\end{table}
 
+\newpage
 
+%Appendix G
+\chapter{Two channel age-activity plot}
+\label{App_two_channel_plot}
 
-
-
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.6]{Figures/4-Chromospheric_age/all_ca_results_h_order.pdf}
+    \caption{Plot showing the same sample as Figure \ref{fig:calcium_emission_plot}, but with \Rprime values calculated using only the H and R channels. This was in order to compare values with the archival observations found in the \esp archive at different epochs.}
+    \label{fig:modified_ca_age_activity_plot_2channel}
+\end{figure}
 
 
 
