@@ -17,6 +17,7 @@ Chromospheric emission is a widely used activity indicator, particularly for the
 
 \section{Observations}
 \subsection{Sample selection}
+\label{Chp4_obs_sample_selection}
 The sample considered in this work were selected from stars studied by \citet{Bruntt_etal_2012}, who performed a detailed spectral study aided by asteroseismic data for 93 solar-type stars observed with \textit{Kepler}. For the purposes of studying the magnetic activity of old stars, the sample was restricted to stars with an outer convective envelope, are on the main sequence and have an asteroseismically determined age.
 
 In order to select stars with an outer convective envelope, the effective temperature was required to be less than 6500 K, equivalent to spectral type F5V. Stars with spectral types earlier than F5V do not have a substantial outer convective envelope that is required for the solar-like dynamo process \citep{Pinsonneault_etal_2001}. Therefore, these stars are not expected to spin-down via magnetic braking during their main sequence lifetime or follow the same age-activity relationship as lower-mass stars. However, there is some observational evidence that hotter stars can occasionally display magnetic activity features as well; for example, weak X-ray emission was detected from the A7V star Altair \citep{Robrade_Schmitt_2009}. Therefore, data analysis was performed on all main sequence stars in the sample spanning the full effective temperature range of ca. 5000-6900 K, but stars with effective temperatures greater than 6500 K are displayed separately in tables and figures.
@@ -96,7 +97,7 @@ S = \frac{N_{H} + N_{K}}{N_{R} + N_{V}}
         \includegraphics[scale=0.75]{Figures/4-Chromospheric_age/narval_calibrator_reltionship.pdf}
         \caption{\narval Calibrators}
     \end{subfigure}
-    \caption{Plots showing the average \Smw \citep{Duncan_etal_1991} against the S index calculated from the \esp/\narval spectrographs for the calibrator stars. The black line indicates the best-fitting linear relationship between the two parameters.}
+    \caption[Calibration relationships to \Smw]{Plots showing the average \Smw \citep{Duncan_etal_1991} against the S index calculated from the \esp/\narval spectrographs for the calibrator stars. The black line indicates the best-fitting linear relationship between the two parameters.}
     \label{fig:calibrator_relationships_Smw}
 \end{figure}
 
@@ -148,7 +149,7 @@ In Figure \ref{fig:calcium_emission_plot}, the \Rprime activity indicator is plo
 
 \begin{figure}[h]
 	\includegraphics[width=0.99\textwidth]{Figures/4-Chromospheric_age/ca_results_with_clusters.pdf}
-	\caption{Plot showing data analysed in this work alongside cluster data from \citet{Mamajek_Hillenbrand_2008} shown in black. The average solar value over several cycles is also shown \citep{Egeland_etal_2017}.}
+	\caption[Calcium emission as a function of age for sample and cluster data]{Plot showing data analysed in this work alongside cluster data from \citet{Mamajek_Hillenbrand_2008} shown in black. The average solar value over several cycles is also shown \citep{Egeland_etal_2017}.}
 	\centering
 	\label{fig:calcium_emission_plot}
 \end{figure}
@@ -208,7 +209,7 @@ KIC 10963065 & 2013 & 1628074i   & 1625                 \\
 KIC 11253226 & 2014 & 1740580i   & 140					\\
 \hline
 \end{tabular}
-\caption{Details of observations taken from \esp archive to sample potential magnetic activity cycles present.}
+\caption[Details of archival \esp observations]{Details of observations taken from \esp archive to sample potential magnetic activity cycles present.}
 \label{Table:esp_additional_obs_table}
 \end{table}
 
@@ -217,14 +218,14 @@ Due to the scatter in the spectral order containing the Ca II K order in archiva
 \begin{figure}
     \centering
     \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/cool_multiple_obs_plot_with_sun.pdf}
-    \caption{Plot showing the \Rprime indicator values calculated using only the H and R channels (see Section \ref{Chp4_data_analysis_two_channel} for further details) for multiple observations of stars in our sample ($T_{eff} < 6500$ K). The grey shaded region indicates the range of the \Rprime indicator values that our sample have when the \Rprime indicator is calculated using only the H and R channels (see Appendix REF for plot). The average solar value over several cycles \citep{Egeland_etal_2017} is also shown for reference.}
+    \caption[Plot showing activity over several epochs for stars with $T_{eff} < 6500$ K]{Plot showing the \Rprime indicator values calculated using only the H and R channels (see Section \ref{Chp4_data_analysis_two_channel} for further details) for multiple observations of stars in our sample ($T_{eff} < 6500$ K). The grey shaded region indicates the range of the \Rprime indicator values that our sample have when the \Rprime indicator is calculated using only the H and R channels (see Appendix REF for plot). The average solar value over several cycles \citep{Egeland_etal_2017} is also shown for reference.}
     \label{fig:ca_multiple_obs}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/hot_multiple_obs_plot_with_sun.pdf}
-    \caption{Plot showing \Rprime values calculated using only the H and R channels for multiple observations of stars in our sample with an effective temperature greater than 6500 K. The grey shaded region indicates the range of \Rprime values that our sample occupy.}
+    \caption[Plot showing activity over several epochs for stars with $T_{eff} > 6500$ K]{Plot showing \Rprime values calculated using only the H and R channels for multiple observations of stars in our sample with an effective temperature greater than 6500 K. The grey shaded region indicates the range of \Rprime values that our sample occupy.}
     \label{fig:ca_multiple_obs_hot_Fstars}
 \end{figure}
 
@@ -244,55 +245,102 @@ From theoretical considerations \citep{Cuntz_etal_2000}, stars with exoplanets i
 \label{Chp4_discussion}
 
 \subsection{Comparison to existing age-activity relationships}
+\label{Chp4_discus_previous_relations}
 There have been numerous studies that have calibrated the relationship between the \Rprime indicator and stellar age. In this section, the sample of stars with asteroseismic ages will be compared to these previous relationships.
-
-The relationships that we consider are taken from \citet{Soderblom_etal_1991}, \citet{Lachaume_etal_1999} and \citet{Mamajek_Hillenbrand_2008}; these three relationships are shown alongside the sample of old stars analysed in this work in Figure REF
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/ca_results_3_relationship.pdf}
-    \caption{Caption}
+    \caption[Comparison of sample to previous age-activity relationships]{Plot showing three previously published calibrated relationships between the \Rprime indicator and age \citep{Soderblom_etal_1991,Lachaume_etal_1999,Mamajek_Hillenbrand_2008} alongside the cluster data from \citet{Mamajek_Hillenbrand_2008} and the old sample of stars from this work. The average solar value over several cycles is also shown \citep{Egeland_etal_2017}.}
     \label{fig:comparison_previous_relationships_ca}
 \end{figure}
 
+The relationships that we consider are taken from \citet{Soderblom_etal_1991}, \citet{Lachaume_etal_1999} and \citet{Mamajek_Hillenbrand_2008}; these three relationships are shown alongside the sample of old stars analysed in this work in Figure \ref{fig:comparison_previous_relationships_ca}. The first relationship from \citet{Lachaume_etal_1999} is consistent with the two youngest clusters shown in Figure \ref{fig:comparison_previous_relationships_ca}. However, this relationship suggest that the \Rprime indicator does not decay as rapidly as the other two relationships. It is worth noting that they have restricted their sample to B-V $> 0.6$ which ma explain some of the disagreement with the other two relationships. In addition to this, some of their ages are not independent as they have been derived from rotation. The relationship from \citet{Soderblom_etal_1991} shown is the simple power law that they fitted to their data. We see that this relationship has reasonable agreement with the \citet{Mamajek_Hillenbrand_2008} relationship from $\approx$ 1 Gyr. However, it should also be noted that \citet{Soderblom_etal_1991} made an additional fit that included a constraint for constant star formation. This improved the relationship for younger ages but does not affect stars older than the Sun. The third relationship shown in Figure \ref{fig:comparison_previous_relationships_ca} is from \citet{Mamajek_Hillenbrand_2008}. As with the relationship from \citet{Soderblom_etal_1991}, there is good agreement with the cluster data and the solar value. \citet{Mamajek_Hillenbrand_2008} also noted that there was a slight positive trend with colour index. However, for the sample analysed in this work no strong trend with colour index is found.
 
+However, these three relationships do not have good agreement with the sample of old stars considered in this work. The relationships tend to have higher magnetic activity values for a given age than the sample of old stars. This difference could be due to the selection of stars in these studies compared to this work. For example, our sample calculated values for the \Rprime indicator for every star that met our criteria (see Section \ref{Chp4_obs_sample_selection}) and have not excluded stars that do not have visible chromospheric emission. It should also be noted that these studies have used various methods to determine ages for their respective samples including isochronal and cluster ages. However, a common issue is the lack of stars older than a gigayear with reliable and accurate ages. This work has improved on this by considering stars with ages determined by asteroseismology, which has proved to be an accurate age-dating method for old field stars.
 
+Recent work by \citet{Lorenzo_Oliveira_etal_2016} has incorporated mass and metallicity into the age-activity relationship and found good agreement with asteroseismic ages. Therefore, in order to test if the dispersion seen in our sample of stars is due to mass and or metallicity effects we consider variations of the age-mass-metallicity-activity relationship from \citet{Lorenzo_Oliveira_etal_2016} and compare these to the F dwarf stars in our sample.
 
+First, the effect of mass on the age-activity relationship is considered. The top panel in Figure \ref{fig:LO_plot} shows the four oldest clusters from \citet{Mamajek_Hillenbrand_2008} alongside the F stars from our sample. Three variations of the age-activity relationship from \citet{Lorenzo_Oliveira_etal_2016} are also shown - each of these curves assumes solar metallicity and the mass is varied from $1.0 M_{\odot}$ to $1.4 M_{\odot}$ in steps of $0.2 M_{\odot}$. We see that the inclusion of mass into the age-activity relationship changes the shape slightly for stars older than $\approx 1$ Gyr. This can explain some of the dispersion seen in our sample, however, it does not explain the majority of the dispersion.
 
+\begin{figure}
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/ca_results_LO_mass_w_hotstars.pdf}
+        \caption{Effect of mass on age-activity relationship}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/ca_results_LO_metallicity_w_hotstars.pdf}
+        \caption{Effect of metallicity on age-activity relationship}
+    \end{subfigure}
+    \caption[Effect of mass and metallicity on the age-activity relationship]{Plots showing the effect of (a) mass and (b) metallicity on the age-activity relationship using relationship from \citet{Lorenzo_Oliveira_etal_2016}. The oldest clusters from \citet{Mamajek_Hillenbrand_2008} are shown along with the F stars from the sample of stars analysed in this work.}
+    \label{fig:LO_plot}
+\end{figure}
+
+The effect of metallicity on the age-activity relationship is then considered, this is shown in the bottom panel of Figure \ref{fig:LO_plot}. In this case, the mass is assumed to be $1.2 M_{\odot}$ and three values of metallicity are considered ([Fe/H] = -0.5, 0.0 and +0.5). It is clear to see that metallicity has a greater effect on the age-activity relationship compared to the stellar mass which may be able to explain the dispersion in our data. However, we have a range of stellar masses and metallicities included in our sample, therefore further investigation was warranted.
+
+For our sample of stars, the metallicities are known from \citet{Bruntt_etal_2012} (the original spectroscopy study) and the stellar masses from asteroseismology \citep{Chaplin_etal_2014,Silva_Aguirre_etal_2017}. These parameters were used along with the asteroseismic age to calculate an expected value for the \Rprime indicator from the age-mass-metallicity-activity relationship \citep{Lorenzo_Oliveira_etal_2016}. The measured value of the \Rprime indicator is plotted as a function of the expected value in Figure \ref{fig:Rprime_measured_v_expected}. Figure \ref{fig:Rprime_measured_v_expected} shows that for the majority of our sample, the measured value of the \Rprime indicator is less than the expected value from the age-mass-metallicity-activity relationship. This suggests that there are stars that lie below the predicted age-activity relationship, this is consistent with the X-ray data \citep{Booth_etal_2017} that showed a steepening of the age-activity relationship at ages older than a gigayear.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/rhk_measured_v_expected.pdf}
+    \caption[Measured \Rprime as a function of the expected value including mass and metallicity]{Plot of measured value of the \Rprime indicator from this study as a function of the expected value (as calculated from \citealt{Lorenzo_Oliveira_etal_2016}). The black line shows the 1:1 relationship between the two parameters.}
+    \label{fig:Rprime_measured_v_expected}
+\end{figure}
+
+One star, KIC 6116048, is missing from the sample in Figure \ref{fig:Rprime_measured_v_expected} due to the combination of its stellar parameters falling outside the range of the \citet{Lorenzo_Oliveira_etal_2016} relationship. This star is shown in Figure \ref{fig:LO_invalid_star} with the age-activity relationship from \citet{Lorenzo_Oliveira_etal_2016} using the relevant stellar parameters. Figure \ref{fig:LO_invalid_star} shows that for this star, when the stellar parameters are entered into the age-mass-metallicity-activity relationship, it results in an age-activity relationship that is not valid for the ages of this star. Therefore, it cannot be used to examine the relationship between the measured value of the \Rprime indicator and the expected value.
+
+\begin{figure}
+	\centering
+    \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/rhk_KIC_6116048.pdf}
+    \caption[Plot of age-activity relationship for stellar parameters of KIC 6116048]{Plot showing KIC 6116048 on the age-activity plot. The oldest clusters from \citet{Mamajek_Hillenbrand_2008} are shown along with the relationship from \citet{Lorenzo_Oliveira_etal_2016} using the relevant stellar parameters for the star.}
+	\label{fig:LO_invalid_star}
+\end{figure}
 
 \subsection{Spin-down in context of observational data}
 
+In recent years, there has been renewed interest into investigating the nature of rotation / magnetic activity - age relationships beyond a gigayear by using ages from asteroseismology \citep{van_Saders_etal_2016,Booth_etal_2017}. \citet{van_Saders_etal_2016} investigated the rotation - age relationship using data from \textit{Kepler} and asteroseismic ages. They found anomalously high rotation rates for older stars and suggested that this was due to weakened magnetic braking. As discussed in the previous Chapter, \citet{Booth_etal_2017} investigated the age-activity relationship by combining X-ray observations with asteroseismic ages. That study found that the X-ray luminosity decays more rapidly for older stars compared to the younger cluster data. One possible explanation for this steepening of the age-activity relationship is due to a change in the activity-rotation relationship.
 
+From the sample of old stars considered in this work, we have determined that mass and metallicity cannot explain all of the dispersion in the age-activity relationship at these older ages. There are stars that lie below the predicted age-activity relationship for a given metallicity and stellar mass (shown in Figure \ref{fig:Rprime_measured_v_expected}). This is consistent with the X-ray data \citep{Booth_etal_2017} as there are inactive stars that lie below the predicted age-activity relationship.
 
-
-
-
-
-
+Our sample does not show abnormally high values of the \Rprime indicator that may be associated with weakened magnetic braking at these older ages \citep{van_Saders_etal_2016}. However, we may not expect to see abnormally high values of activity if there is a change in the activity-rotation relationship as suggested by \citet{Booth_etal_2017}. There has also been a recent study into modelling of the stellar wind in time by \citet{OFionnagain_Vidotto_2018}. They presented a way to simultaneously explain the observations of \citet{van_Saders_etal_2016} and \citet{Booth_etal_2017}; the observed decrease in X-ray luminosity is associated with a weaker stellar wind. This weaker stellar wind removes less angular momentum, leading to longer rotation periods as seen in the \textit{Kepler} observations. \citet{OFionnagain_Vidotto_2018} calculated mass-loss rates for a sample of solar-analogues using their 1D polytropic model and found a break in the mass-loss rates at $\approx 2$ Gyr.
 
 \subsection{Chromospheric activity as an age indicator}
 
+In recent years, there has been some debate over the use of chromospheric emission as an age indicator, particularly for stars older than a gigayear. \citet{Pace_2013} presented an L-shaped chromospheric activity versus age diagram and suggested that the use of chromospheric emission as an age indicator is limited to stars younger than $\approx 1.5$ Gyr. However, recent work from \citet{Lorenzo_Oliveira_etal_2016} incorporated mass and metallicity into the age-activity relationship as discussed in Section \ref{Chp4_discus_previous_relations}. In their study, they were also able to reproduce the lack of chromospheric evolution (Figure 2 within) by following the same sample selection procedure as \citet{Pace_2013}. \citet{Lorenzo_Oliveira_etal_2016} found that there was a constant metallicity dispersion along the age axis, which can be understood as an additional source of scatter in the age-activity relationship. They also found that as they considered younger stars, the sample started to become more bias towards higher mass stars.
 
-
-
-
-
-
-
+Our sample of stars shows that even when mass and metallicity are taken into account, there are still stars that lie below the age-activity relationship. Our sample also shows a decrease in the correlation between age and activity for stars older than a gigayear. Therefore, it may be possible that the chromospheric emission decay with age does stop at a relatively young age for the F stars in our sample as suggested by \citet{Pace_2013}. In any case, since the correlation between age and activity decreases for these older stars, we would advise caution in using the \Rprime indicator as an age diagnostic for old main sequence stars.
 
 \subsection{Discrepancy between cluster stars and asteroseismic sample}
 
+\textcolor{red}{TBD - Come back once paper section has been written}
 
+It should be noted that samples taken from asteroseismology have a selection bias towards stars more evolved than the Sun (e.g. \citealt{Metcalfe_etal_2016}). The first selection effect is due to the intrinsic amplitude of solar-like oscillations \citep{Houdek_etal_1999} - they are easier to detect in early-type and more evolved stars. The second is due to the suppression of acoustic mode amplitudes by high magnetic activity \citep{Chaplin_etal_2011_stellar_activity}. This may be of particular importance for the G type stars in our sample as they occupy a much narrower range of activity values than the F stars; possibly indicating that we are lacking more active stars in the sample. Additional data, particularly for younger and more active G-type stars, would confirm if there is any trend in the \Rprime indicator with age for G-type stars.
 
-
-
-
-
-
-\newpage %REMEMBER TO TAKE THIS OUT!
-\section{H-$\alpha$ analysis and discussion}
+\section{\texorpdfstring{H-$\alpha$}{H-alpha} Investigation}
 \label{Chp4_halpha}
+\subsection{Analysis}
+An investigation into the use of the \Halpha line (located at 6562.8 \AA) as an age indicator was also conducted as an alternative to the \caII lines. Since the spectra from \citet{Bruntt_etal_2012} cover a wide spectral range, the \Halpha was also available to analyse. The sample selection for the H-$\alpha$ analysis was conducted using the same selection criteria as the \caII data (described in Section \ref{Chp4_obs_sample_selection}); the spectra were also corrected for Doppler shift.
 
+To quantify the chromospheric emission from the \Halpha line, an index analogous to that of the S index is used and is defined by Equation \ref{Eq:h_alpha_index} where $F_{x}$ is the total flux in the relevant channel. There are three channels: the central \Halpha core is measured in a 1.6 \AA \space band centred at 6562.808 \AA \space and two reference channels from 6545.495 - 6556.245 \AA \space and 6575.934 - 6584.684 \AA. These channel values are taken from.
+
+\begin{equation}
+    Index = \frac{F_{H{\alpha}}}{F_{1}+F_{2}}
+    \label{Eq:h_alpha_index}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+\subsection{Results and Discussion}
 
 
 
