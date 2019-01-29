@@ -43,7 +43,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{mathpazo} % Use the Palatino font by default
 
-\usepackage[style=authoryear-comp,doi=false,isbn=false,url=false,maxbibnames=5, minbibnames=3, dashed=false,sortcites=false,maxcitenames=2,giveninits=true,mincitenames=1,uniquelist=false, uniquename=false,natbib=true, backend=bibtex]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[style=authoryear-comp,doi=false,isbn=false,url=false,eprint=false, archivePrefix=false,maxbibnames=5, minbibnames=3,dashed=false,sortcites=false, maxcitenames=2,giveninits=true,mincitenames=1,uniquelist=false, uniquename=false,natbib=true, backend=bibtex]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
 \addbibresource{references.bib} % The filename of the bibliography
 
@@ -270,6 +270,20 @@ The Thesis Abstract is written here (and usually kept to just this page). The pa
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
+
+\DeclareRobustCommand{\mnras}{Monthly Notices of the RAS}
+\DeclareRobustCommand{\apj}{Astrophysical Journal}
+\DeclareRobustCommand{\nat}{Nature}
+\DeclareRobustCommand{\aap}{Astronomy and Astrophysics}
+\DeclareRobustCommand{\solphys}{Solar Physics}
+\DeclareRobustCommand{\aj}{Astronomical Journal}
+\DeclareRobustCommand{\apss}{Astrophysics and Space Science}
+\DeclareRobustCommand{\aaps}{Astronomy and Astrophysics, Supplement}
+\DeclareRobustCommand{\ssr}{Space Science Reviews}
+\DeclareRobustCommand{\apjs}{Astrophysical Journal, Supplement}
+\DeclareRobustCommand{\pasp}{Publications of the ASP}
+
+
 
 \printbibliography[heading=bibintoc]
 
