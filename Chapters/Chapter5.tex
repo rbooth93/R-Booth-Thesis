@@ -22,26 +22,53 @@ The second method used to determine stellar rotation periods is long term observ
 
 The third method that can be used to determine the rotation period is from asteroseismology. As discussed in Section \ref{Section:intro_ages}, asteroseismology is a valuable tool for determining fundamental parameters through observations of stellar oscillations. However, one aspect not discussed in the previous section is that any departure from solid body rotation will result in a frequency splitting of non-radial oscillation modes; thus the frequency will also depend on the azimuthal order, m. From helioseismology, the analysis of the frequency splitting due to rotation has provided detail about the interior of the Sun and revealed the presence of the tachocline \citep{Spiegel_Zahn_1992} which is instrumental in stellar dynamo theory . However, in order to obtain rotational splitting from asteroseismology, data sets with timescales on the order of years are required. This is due to the amplitude of the frequency splitting which vary from a few micro-Hertz for more massive or younger stars down to a fraction of a micro-Hertz for less massive or older stars. The frequency splitting of p modes in solar-like oscillators are predominantly determined by the rotational profile in the stellar envelope. There is still some debate in the literature about the accuracy of asteroseismic rotation periods (see e.g. \citealt{Barnes_etal_2016_aspect_gyro}), which will be discussed later in this Chapter.
 
-\section{Data and analysis}
+\section{Data and Method}
 
 The sample of stars considered in this analysis comes from the X-ray luminosity and calcium emission studies conducted in Chapters \ref{Chapter3} and \ref{Chapter4}, respectively. Rotation periods for this sample of stars were searched for in the literature using \textit{VizieR} \citep{Ochsenbein_etal_2000}. In addition to this, literature values for the \Rprime activity indicator were collected for the sample of stars from the X-ray luminosity study. The details of the literature values collected and the relevant references for the sample of stars are shown in Appendix REF.
 
-Since the sample of stars considered in this work is fairly small, comparison samples from previous activity-rotation studies were also used. To compare the stars with values for the \Rprime indicator, the sample of stars from \citet{Metcalfe_etal_2016} were also plotted. Also, to put the asteroseismic samples into context, data was taken from \citet{Baliunas_etal_1996}. For the X-ray sample, data was taken from \citet{Wright_etal_2011} used to put the sample into context.
+Since the sample of stars considered in this work is fairly small, comparison samples from previous activity-rotation studies were also used. To compare the stars with values for the \Rprime indicator, the sample of stars from \citet{Metcalfe_etal_2016} were also plotted. Also, to put the asteroseismic samples into context, data was taken from \citet{Baliunas_etal_1996}. For the X-ray sample, data was taken from \citet{Wright_etal_2011} (W11) used to put the sample into context.
+
+As discussed in Section \ref{Chp2_activity-rotation_lit_review}, the activity-rotation relationship is usually calibrated in terms of Rossby number (\Ro). \Ro is defined as the as the rotation period divided by the convective turnover time (\tauc). In this work, \tauc was calculated using the relations from W11 which was derived empirically. By using an empirical method, it assumes that the activity-rotation relationship can be divided into saturated and non-saturated regimes. W11 divided their sample into bins of $B-V$ colour with approximately equal number of stars in each bin. For each mass bin, the activity-rotation relationship was fitted with Equation \ref{Eq:W11_tauc_method_fit_eq} where $(\frac{L_{x}}{L_{BOL}})_{sat}$ and $P_{sat}$ are fitted for each of the mass bins using the $\beta$ value found in W11.
+
+\begin{equation}
+    \frac{L_{x}}{L_{BOL}} = 
+    \begin{cases}
+        C_{B-V}P_{rot}^{\beta} & P_{rot} > P_{sat} \\
+        (\frac{L_{x}}{L_{BOL}})_{sat} & P_{rot} < P_{sat}
+    \end{cases}
+    \label{Eq:W11_tauc_method_fit_eq}
+\end{equation}
+
+The fits from each mass bins were used by W11 to determine the colour dependent constant ($C_{B-V}$). The colour dependent constant is defined in Equation \ref{Eq:W11_tauc_method_CBV}, W11 found the colour dependence by setting the scaling constant (C) so that the \tauc value for solar-mass stars matched the values from \citet{Noyes_etal_1984}. This allowed for \tauc to be plotted as a function of colour and/or mass and the best-fitting relationship to be found. It is these best-fitting relationships shown in Equations \ref{Eq:W11_tauc_VK} and \ref{Eq:W11_tauc_mass} that are used to calculate \tauc in this work. In Equation \ref{Eq:W11_tauc_VK}, X is equal to $V-K$ and is valid in the range - $1.1 < V-K < 6.6$.
+
+\begin{equation}
+    C_{B-V} = C\tau_{c}^{-\beta}
+    \label{Eq:W11_tauc_method_CBV}
+\end{equation}
+
+\begin{equation}
+    \log \tau_{c} = 
+    \begin{cases}
+        0.73 + 0.22X & X < 3.5 \\
+        -2.16 +1.50X - 0.13X^{2} & X > 3.5
+    \end{cases}
+    \label{Eq:W11_tauc_VK}
+\end{equation}
+
+\begin{equation}
+    \log \tau = 1.16 - 1.49\log(M/M_{\odot}) - 0.54\log^{2}(M/M_{\odot})
+    \label{Eq:W11_tauc_mass}
+\end{equation}
+
+For the majority of samples considered in this analysis, masses were available and \tauc was calculated using Equation \ref{Eq:W11_tauc_mass}. However, for the sample of stars from \citet{Baliunas_etal_1996}, no masses were available. Therefore, Table 3 from \citet{Pecaut_etal_2012} was used to convert $B-V$ values into $V-K$ values and Equation \ref{Eq:W11_tauc_VK} was used to calculate \tauc. Since the table from \citet{Pecaut_etal_2012} is limited to $B-V < 0.77$, the sample from \citet{Baliunas_etal_1996} was also limited to stars that fell into this range.
+
+\section{Results}
 
 
+\section{Discussion}
 
 
-
-
-
-
-
-
-
-
-
-
-
+\section{Conclusions}
 
 
 

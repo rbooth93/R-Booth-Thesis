@@ -41,7 +41,7 @@ Stellar ages from asteroseismology were collected from the literature. In partic
 \label{Chp4_obs_spectra}
 The spectra used in this study stem from \citet{Bruntt_etal_2012}. The spectra were obtained with the \esp spectrograph at the 3.6 m Canada-France-Hawaii Telescope (CFHT; \citealt{Donati_etal_2006}) and the \narval spectrograph \citep{Auriere_2003} mounted on the 2 m Bernard Lyot Telescope at the Pic du Midi Observatory. These spectra cover a spectral range of ${\thicksim} 3700$ to ${\thicksim} 10480$ \AA. In this work, the reduced spectra by \citet{Bruntt_etal_2012} was used which was received through personal communication. In \citet{Bruntt_etal_2012}, standard pipeline-reduced spectra were normalised using \texttt{RAINBOW} \citep{Bruntt_etal_2010} which allows manual normalisation of the spectra. The continua were adjusted by comparing with a synthetic spectrum and overlapping regions of spectral orders were checked so that both the line depths and continuum level matched.
 
-Additional archival observations were used to investigate the level of long-term variability of the \Rprime indicator due to potential magnetic activity cycles (see Section REF). Pipeline-reduced spectra were obtained directly from the \esp archive\footnote{\url{http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/}}.
+Additional archival observations were used to investigate the level of long-term variability of the \Rprime indicator due to potential magnetic activity cycles (see Section \ref{Chp4_results_variability}). Pipeline-reduced spectra were obtained directly from the \esp archive\footnote{\url{http://www.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/en/}}.
 
 In the following sections (i.e Sections \ref{Chp4_data_analysis}, \ref{Chp4_results} and \ref{Chp4_discussion}), the focus will be on the data analysis, results and discussion of the chromospheric emission from the \caII spectral lines.
 
@@ -133,7 +133,7 @@ Using the \Smw values calculated from the calibration relationships, the \Rprime
 
 \subsection{Analysis using two channels}
 \label{Chp4_data_analysis_two_channel}
-Additional observations were searched for in the \esp archive in order to investigate the effect of potential magnetic activity cycles on the value of the \Rprime indicator (see Section REF). However, a significant number of spectra taken from the \esp archive contained strong scatter in the spectral order where the Ca II K line is located, whereas the scatter was much lower in the spectral order containing the Ca II H line. Therefore, a modified S index and \Rprime indicator using only the H and R channels was calculated. Specifically, the modified S index was calculated using Equation \ref{Eq:modified_S} where $N_{x}$ is the total flux in the relevant channel.
+Additional observations were searched for in the \esp archive in order to investigate the effect of potential magnetic activity cycles on the value of the \Rprime indicator (see Section \ref{Chp4_results_variability}). However, a significant number of spectra taken from the \esp archive contained strong scatter in the spectral order where the Ca II K line is located, whereas the scatter was much lower in the spectral order containing the Ca II H line. Therefore, a modified S index and \Rprime indicator using only the H and R channels was calculated. Specifically, the modified S index was calculated using Equation \ref{Eq:modified_S} where $N_{x}$ is the total flux in the relevant channel.
 
 \begin{equation}
     S_{mod} = \frac{N_{H}}{N_{R}}
@@ -188,7 +188,7 @@ Surprisingly, we find that the chromospheric activity of the M67 stars is higher
 
 Therefore, an additional analysis was performed to see if data reduction issues could be the reason for this discrepancy. To this aim, additional spectra for member stars of the three oldest clusters from \citet{Mamajek_Hillenbrand_2008}, i.e. M67, the Ursa Major (UMa) moving group and the Hyades, in the \esp and \narval archives. Unfortunately no archival observations of M67 member stars were found, however, spectra of five UMa member stars and two Hyades member stars were found. Using the two channel analysis as described in Section \ref{Chp4_data_analysis_two_channel}, the spectra were analysed to obtain the \Rprime indicator. These values for the \Rprime indicator were plotted as a function of age and compared to the \citet{Mamajek_Hillenbrand_2008} values for the cluster as shown in Figure \ref{fig:cluster_data_comparison}. 
 
-Figure \ref{fig:cluster_data_comparison} shows that there is some scatter in the \Rprime values found from archival observations, which is to be expected given the intrinsic stellar variability of cool stars. However, there is one star that has an extremely low value for the \Rprime indicator, HD 38393. It's value for the \Rprime activity indicator is more in line with what we would expect from our old field star sample. In \citet{Mamajek_Hillenbrand_2008}, HD 38393 had measured values for the \Rprime activity indicator of $-4.77$ and $-4.82$. Upon further investigation, we found that this is classed as a double star on SIMBAD, therefore this may effect the value of the \Rprime activity indicator. With the exception of this outlier, the archival observations from \esp and \narval are in agreement with the \citet{Mamajek_Hillenbrand_2008} values. No systematic offset exists between the two data sets; therefore the difference in the activity levels between the asteroseismic sample and the cluster sample is real and discuss the possible explanations for this discrepancy in Section REF.
+Figure \ref{fig:cluster_data_comparison} shows that there is some scatter in the \Rprime values found from archival observations, which is to be expected given the intrinsic stellar variability of cool stars. However, there is one star that has an extremely low value for the \Rprime indicator, HD 38393. It's value for the \Rprime activity indicator is more in line with what we would expect from our old field star sample. In \citet{Mamajek_Hillenbrand_2008}, HD 38393 had measured values for the \Rprime activity indicator of $-4.77$ and $-4.82$. Upon further investigation, we found that this is classed as a double star on SIMBAD, therefore this may effect the value of the \Rprime activity indicator. With the exception of this outlier, the archival observations from \esp and \narval are in agreement with the \citet{Mamajek_Hillenbrand_2008} values. No systematic offset exists between the two data sets; therefore the difference in the activity levels between the asteroseismic sample and the cluster sample is real and discuss the possible explanations for this discrepancy in Section \ref{Chp4_discus_discrepancy}.
 
 \begin{figure}
     \centering
@@ -198,6 +198,7 @@ Figure \ref{fig:cluster_data_comparison} shows that there is some scatter in the
 \end{figure}
 
 \subsection{Variability of stars}
+\label{Chp4_results_variability}
 It is known that cool stars may have magnetic activity cycles similar to the solar eleven year activity cycle \citep{Wilson_1978,Baliunas_etal_1995}. Therefore, an investigation into the activity spread due to intrinsic stellar variability, i.e. by sample stars being in different stages of a possible activity cycle, was also conducted. The \esp and \narval archives were searched for additional observations of the sample of stars with asteroseismic ages. Thirteen of the sample stars had been observed with \esp at additional epochs. Seven of those stars are mid-F to K stars and six are hotter F stars. The details of these observations are shown in Table \ref{Table:esp_additional_obs_table}. Note that no additional observations were found in the \narval archive.
 
 \begin{table}
@@ -232,7 +233,7 @@ Due to the scatter in the spectral order containing the Ca II K order in archiva
 \begin{figure}
     \centering
     \includegraphics[scale=0.55]{Figures/4-Chromospheric_age/cool_multiple_obs_plot_with_sun.pdf}
-    \caption[Plot showing activity over several epochs for stars with $T_{eff} < 6500$ K]{Plot showing the \Rprime indicator values calculated using only the H and R channels (see Section \ref{Chp4_data_analysis_two_channel} for further details) for multiple observations of stars in our sample ($T_{eff} < 6500$ K). The grey shaded region indicates the range of the \Rprime indicator values that our sample have when the \Rprime indicator is calculated using only the H and R channels (see Appendix REF for plot). The average solar value over several cycles \citep{Egeland_etal_2017} is also shown for reference.}
+    \caption[Plot showing activity over several epochs for stars with $T_{eff} < 6500$ K]{Plot showing the \Rprime indicator values calculated using only the H and R channels (see Section \ref{Chp4_data_analysis_two_channel} for further details) for multiple observations of stars in our sample ($T_{eff} < 6500$ K). The grey shaded region indicates the range of the \Rprime indicator values that our sample have when the \Rprime indicator is calculated using only the H and R channels (see Appendix \ref{App_two_channel_plot} for plot). The average solar value over several cycles \citep{Egeland_etal_2017} is also shown for reference.}
     \label{fig:ca_multiple_obs}
 \end{figure}
 
@@ -328,7 +329,7 @@ In recent years, there has been some debate over the use of chromospheric emissi
 Our sample of stars shows that even when mass and metallicity are taken into account, there are still stars that lie below the age-activity relationship. Our sample also shows a decrease in the correlation between age and activity for stars older than a gigayear. Therefore, it may be possible that the chromospheric emission decay with age does stop at a relatively young age for the F stars in our sample as suggested by \citet{Pace_2013}. In any case, since the correlation between age and activity decreases for these older stars, we would advise caution in using the \Rprime indicator as an age diagnostic for old main sequence stars.
 
 \subsection{Discrepancy between cluster stars and asteroseismic sample}
-
+\label{Chp4_discus_discrepancy}
 \textcolor{red}{TBD - Come back once paper section has been written}
 
 It should be noted that samples taken from asteroseismology have a selection bias towards stars more evolved than the Sun (e.g. \citealt{Metcalfe_etal_2016}). The first selection effect is due to the intrinsic amplitude of solar-like oscillations \citep{Houdek_etal_1999} - they are easier to detect in early-type and more evolved stars. The second is due to the suppression of acoustic mode amplitudes by high magnetic activity \citep{Chaplin_etal_2011_stellar_activity}. This may be of particular importance for the G type stars in our sample as they occupy a much narrower range of activity values than the F stars; possibly indicating that we are lacking more active stars in the sample. Additional data, particularly for younger and more active G-type stars, would confirm if there is any trend in the \Rprime indicator with age for G-type stars.
@@ -353,7 +354,7 @@ A colour corrected index for the \Halpha index was found in \citet{Gomes_da_Silv
 \end{equation}
 
 \subsection{Results and Discussion}
-In total, 35 stars were fully analysed and the details of this sample are shown in Appendix REF. Given the location of the \Halpha spectral line, the check for nominal negative flux values in the line core was not necessary thus more stars were analysed in this sample. Four stars have observations from both \esp and \narval spectrographs: KIC 5774694, KIC 8006161, KIC 9139163 and KIC 10454113. For simplicity, only the \narval data is shown in plots for these stars.
+In total, 35 stars were fully analysed and the details of this sample are shown in Appendix \ref{App_halpha_results}. Given the location of the \Halpha spectral line, the check for nominal negative flux values in the line core was not necessary thus more stars were analysed in this sample. Four stars have observations from both \esp and \narval spectrographs: KIC 5774694, KIC 8006161, KIC 9139163 and KIC 10454113. For simplicity, only the \narval data is shown in plots for these stars.
 
 \begin{figure}
     \centering
