@@ -127,7 +127,7 @@
 \centering
 \resizebox{0.95\textwidth}{!}{
 	\begin{tabular}[h]{l l l l l l}
-		\hline \hline
+		\hline
 		Name of Star / White Dwarf & Radius / $R_{\odot}$ & $T_{eff}$ / K & $V_{mag}$ & Distance / pc & References\\
 		\hline 
 		16 Cyg A & 1.22 & 5825 & 5.95 & 21.29 & 1,6,8,10 \\
@@ -365,40 +365,44 @@ KIC 7970740  & G9V           & -0.49 & $0.73^{0.03}_{0.01}$ & 0.74 & 5290 & $4.5
 %Appendix F
 \chapter{Results from multiple observations}
 \label{App_ca_multiple_obs_tables}
-%Hot Stars > 6500K
-\begin{table}[h!]
-\centering
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{llllll}
+
+\begin{longtable}{llllll}
+
+\caption[Results of multiple epoch observations]{Results of stars with multiple epoch observations from \esp archive.  and $T_{eff} > 6500$ K.}\\
+
 \hline
 Star Name    & Spectrograph & Year & S Index  & \Smw   & $log(R^{'}_{HK})$   \\
 \hline
-KIC 2837475  & \esp         & 2015 & 0.007 & 0.172 & $-4.873^{0.038}_{0.041}$\\
-KIC 2837475  & \esp         & 2010 & 0.007 & 0.163 & $-4.925^{0.025}_{0.026}$\\
-KIC 2837475  & \esp         & 2014 & 0.008 & 0.181 & $-4.821^{0.024}_{0.025}$\\
-KIC 3733735  & \esp         & 2010 & 0.007 & 0.167 & $-4.904^{0.023}_{0.024}$\\
-KIC 3733735  & \esp         & 2015 & 0.008 & 0.183 & $-4.815^{0.031}_{0.033}$\\
-KIC 9206432  & \esp         & 2014 & 0.006 & 0.152 & $-5.000^{0.030}_{0.032}$\\
-KIC 9206432  & \esp         & 2010 & 0.005 & 0.128 & $-5.244^{0.060}_{0.069}$\\
-KIC 9226926  & \esp         & 2014 & 0.009 & 0.205 & $-4.721^{0.015}_{0.015}$\\
-KIC 9226926  & \narval      & 2010 & 0.008 & 0.194 & $-4.768^{0.009}_{0.009}$\\
-KIC 10709834 & \narval      & 2010 & 0.008 & 0.194 & $-4.760^{0.017}_{0.018}$\\
-KIC 10709834 & \esp         & 2015 & 0.007 & 0.171 & $-4.877^{0.051}_{0.057}$\\
-KIC 11253226 & \esp         & 2010 & 0.007 & 0.165 & $-4.926^{0.025}_{0.026}$\\
-KIC 11253226 & \esp         & 2014 & 0.008 & 0.183 & $-4.826^{0.021}_{0.022}$\\
-\hline
-\end{tabular}
-\caption{Results of stars with multiple epoch observations from \esp archive and $T_{eff} > 6500$ K.}
-\end{table}
+\endfirsthead
 
-%Cool Stars <6500K
-%\begin{minipage}{\linewidth}
-\begin{table}[h!]
-\centering
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{llllll}
 \hline
-Star Name    & Spectrograph & Year & S Index      & \Smw & $log(R^{'}_{HK})$ \\
+Star Name    & Spectrograph & Year & S Index  & \Smw   & $log(R^{'}_{HK})$   \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+$T_{eff} > 6500$ K & & & & & \\
+\hline
+KIC 2837475  & \esp         & 2010 & 0.007 & 0.163 & $-4.925^{0.025}_{0.026}$\\
+             & \esp         & 2014 & 0.008 & 0.181 & $-4.821^{0.024}_{0.025}$\\
+             & \esp         & 2015 & 0.007 & 0.172 & $-4.873^{0.038}_{0.041}$\\
+KIC 3733735  & \esp         & 2010 & 0.007 & 0.167 & $-4.904^{0.023}_{0.024}$\\
+             & \esp         & 2015 & 0.008 & 0.183 & $-4.815^{0.031}_{0.033}$\\
+KIC 9206432  & \esp         & 2010 & 0.005 & 0.128 & $-5.244^{0.060}_{0.069}$\\
+             & \esp         & 2014 & 0.006 & 0.152 & $-5.000^{0.030}_{0.032}$\\
+KIC 9226926  & \narval      & 2010 & 0.008 & 0.194 & $-4.768^{0.009}_{0.009}$\\
+             & \esp         & 2014 & 0.009 & 0.205 & $-4.721^{0.015}_{0.015}$\\
+KIC 10709834 & \narval      & 2010 & 0.008 & 0.194 & $-4.760^{0.017}_{0.018}$\\
+             & \esp         & 2015 & 0.007 & 0.171 & $-4.877^{0.051}_{0.057}$\\
+KIC 11253226 & \esp         & 2010 & 0.007 & 0.165 & $-4.926^{0.025}_{0.026}$\\
+             & \esp         & 2014 & 0.008 & 0.183 & $-4.826^{0.021}_{0.022}$\\
+\hline
+$T_{eff} < 6500$ K & & & & & \\
 \hline
 KIC 6106415  & \narval       & 2010 & 0.006 & 0.15  & $-5.035^{0.016}_{0.017}$\\
              & \esp          & 2014 & 0.007 & 0.164 & $-4.935^{0.021}_{0.022}$\\
@@ -415,12 +419,10 @@ KIC 10454113 & \narval       & 2010 & 0.007 & 0.169 & $-4.895^{0.019}_{0.020}$\\
              & \esp          & 2016 & 0.007 & 0.176 & $-4.859^{0.007}_{0.007}$\\
 KIC 10963065 & \narval       & 2010 & 0.006 & 0.148 & $-5.036^{0.016}_{0.017}$\\
              & \esp          & 2013 & 0.006 & 0.152 & $-5.004^{0.007}_{0.007}$\\
-\hline
-\end{tabular}
-\caption{Results of stars with multiple epoch observations from \esp archive and $T_{eff} < 6500$ K.}
-\end{table}
 
-\newpage
+\end{longtable}
+
+
 
 %Appendix G
 \chapter{Two channel age-activity plot}
@@ -433,7 +435,6 @@ KIC 10963065 & \narval       & 2010 & 0.006 & 0.148 & $-5.036^{0.016}_{0.017}$\\
     \label{fig:modified_ca_age_activity_plot_2channel}
 \end{figure}
 
-%Formatting Problems - will fix this!!
 \chapter{\texorpdfstring{\Halpha}{Halpha} Results}
 \label{App_halpha_results}
 \begin{landscape}
@@ -496,15 +497,73 @@ KIC 11081729 & F5IV             & 0.42 & 6630 & 4.25   & $1.88^{0.42}_{0.42}$  &
 KIC 11253226 & F5IV-V           & 0.39 & 6605 & 4.16   & $1.60^{0.13}_{0.13}$  & 0.0310        & $-1.417^{0.0015}$ & \esp           \\
 KIC 12009504 & F9IV-V           & 0.55 & 6065 & 4.21   & $3.97^{0.43}_{0.43}$  & 0.0342        & $-1.384^{0.0013}$ & \esp           \\
 \end{longtable}
+\clearpage
 \end{landscape}
 
 
+%Appendix I
+\chapter{Rotation-activity data}
+\label{App_I_activity_rotation}
 
+\begin{landscape}
+\begin{longtable}{llccccccl}
 
+\caption[Activity and rotation indicator values for activity-rotation relationship]{\begin{footnotesize} 	Activity and rotation indicator values for sample of stars considered for the activity-rotation analysis. References indicate the sources for the rotation period, chromospheric emission and X-ray emission, respectively. 
+\noindent
+\textbf{References}: (1) \citet{Davies_etal_2015}; (2) \citet{Boro_Saikia_etal_2016}; (3) \citet{Vaughan_etal_1981}; (4) \citet{DeWarf_etal_2010}; (5) \citet{Robertson_etal_2015_GJ176}; (6) \citet{Robertson_etal_2015_GJ191}; (7) \citet{Ammler_vonEiff_Reiners_2012}; (8) \citet{McQuillan_etal_2014} - * indicates low significance for $P_{rot}$; (9) \citet{Paz_Chinchon_etal_2015}; (10) \citet{Nielsen_etal_2013}; (11) \citet{Garcia_etal_2014}; (12) \citet{Janes_2017}; (13) \citet{Collins_etal_2017}; (14) Average \Rprime values from \citet{Pace_2013}; (15) \citet{Sissa_etal_2016}; (16) \citet{Mamajek_Hillenbrand_2008}; (17) \citet{Astudillo_Defru_etal_2017}; (18) \citet{Murgas_etal_2013}; (19) Calcium Study presented in Chapter \ref{Chapter4}; (20) \citet{Egeland_etal_2017}; (21) \citet{Booth_etal_2017}
+\end{footnotesize}}\\
 
+\hline
+Star Name    & $P_{rot}$ / days        & $log(R^{'}_{HK})$ & log($L_{x}/R_{\odot}^{2}$ / ergs s$^{-1}$ $R_{\odot}^{-2}$)          & References& \tauc   & \Ro \\
+\hline
+\endfirsthead
 
+\hline
+Star Name    & $P_{rot}$ / days        & $log(R^{'}_{HK})$ & log($L_{x}/R_{\odot}^{2}$ / ergs s$^{-1}$ $R_{\odot}^{-2}$)          & References& \tauc   & \Ro \\
+\hline
+\endhead
 
+\hline
+\endfoot
 
+\hline
+\endlastfoot
+
+16 Cyg A     & $23.80^{1.80}$   & $-4.909^{0.2}$    & $26.71^{0.10}$    & 1,14,21       & 13.45  & $1.77_{0.18}^{0.19}$  \\
+16 Cyg B     & $23.20^{5.00}$   & $-4.935^{0.119}$  & $<25.77$          & 1,14,21       & 14.71  & $1.58_{0.38}^{0.40}$  \\
+61 Cyg A     & $35.70^{1.90}$   & $-4.850^{0.106}$  & $27.43^{0.10}$    & 2,14,21       & 24.33  & $1.47_{0.08}^{0.08}$  \\
+61 Cyg B     & $48.00^{nan}$    & $-4.950^{nan}$    & $27.33^{0.23}$    & 3,15,21       & 28.80  & $1.67_{nan}^{nan}$    \\
+Alpha Cen B  & $36.20^{1.40}$   & $-4.920^{nan}$    & $27.19^{0.36}$    & 4,16,21       & 15.98  & $2.26_{0.11}^{0.11}$  \\
+GJ 176       & $39.46^{0.01}$   & $-4.911^{nan}$    & $27.8^{0.10}$     & 5,17,21       & 36.27  & $1.09_{0.08}^{0.08}$  \\
+GJ 191       & $142.90^{0.30}$  & $-4.774^{nan}$    & $27.02^{0.10}$    & 6,17,21       & 68.02  & $2.10_{0.20}^{0.21}$  \\
+HR 7703      & $17.10^{nan}$    & $-4.929^{nan}$    & $27.04^{0.10}$    & 7,18,21       & 21.15  & $0.81_{0.08}^{0.09}$  \\
+KIC 10016239 & $4.89^{0.03}$    & $-5.090^{0.063}$  & $27.71^{0.10}$    & 8,19,21       & 11.25  & $0.43_{0.03}^{0.03}$  \\
+KIC 10016239 & $4.89^{0.03}$    & $-5.090^{0.063}$  & N/A               & 8,19,N/A      & 10.51  & $0.47_{0.03}^{0.03}$  \\
+KIC 10454113 & $14.45^{0.23}$   & $-4.903^{0.027}$  & N/A               & 8,19,N/A      & 11.39  & $1.27_{0.07}^{0.07}$  \\
+KIC 10963065 & $12.96^{0.05}$   & $-5.089^{0.025}$  & N/A               & 9,19,N/A      & 14.71  & $0.88_{0.08}^{0.09}$  \\
+KIC 12011630 & $45.03^{7.59}$   & N/A               & $<30.05$          & 8*,N/A,21     & 16.39  & $2.75_{0.60}^{0.67}$  \\
+KIC 1435467  & $6.96^{0.39}$    & $-5.033^{0.018}$  & N/A               & 10,19,N/A     & 9.40   & $0.74_{0.08}^{0.09}$  \\
+KIC 3123191  & $20.55^{0.09}$   & $0$               & $<28.84$          & 8,N/A,21      & 11.87  & $1.73_{0.12}^{0.13}$  \\
+KIC 3733735  & $2.57^{0.01}$    & $-4.983^{0.045}$  & N/A               & 8,19,N/A      & 8.63   & $0.30_{0.02}^{0.02}$  \\
+KIC 5309966  & $10.97^{0.91}$   & N/A               & $<29.02$          & 11,N/A,21     & 9.88   & $1.11_{0.14}^{0.15}$  \\
+KIC 6116048  & $17.26^{1.96}$   & N/A               & $<26.74$          & 11,N/A,21     & 15.86  & $1.09_{0.20}^{0.22}$  \\
+KIC 6225718  & $7.32^{1.20}$    & $-5.111^{0.032}$  & N/A               & 12,19,N/A     & 11.54  & $0.63_{0.13}^{0.13}$  \\
+KIC 6603624  & $45.32^{2.16}$   & N/A               & $<26.96$          & 8*,N/A,21     & 14.26  & $3.18_{0.28}^{0.29}$  \\
+KIC 7206837  & $4.07^{0.01}$    & $-4.987^{0.062}$  & N/A               & 8,19,N/A      & 9.64   & $0.42_{0.02}^{0.02}$  \\
+KIC 7529180  & $1.92^{0.36}$    & N/A               & $28.66^{0.10}$    & 11,N/A,21     & 9.76   & $0.20_{0.04}^{0.05}$  \\
+KIC 8179536  & $25.65^{0.53}$   & $-4.937^{0.039}$  & N/A               & 10,19,N/A     & 11.54  & $2.22_{0.22}^{0.24}$  \\
+KIC 9025370  & $24.51^{2.56}$   & N/A               & $<27.23$          & 8*,N/A,21     & 15.14  & $1.62_{0.24}^{0.25}$  \\
+KIC 9139151  & $12.22^{0.70}$   & $-5.061^{0.074}$  & N/A               & 12,19,N/A     & 11.25  & $1.09_{0.13}^{0.14}$  \\
+KIC 9139163  & $0.61^{0.01}$    & $-5.095^{0.027}$  & N/A               & 12,19,N/A     & 8.54   & $0.07_{0}^{0}$        \\
+KIC 9410862  & $22.77^{2.37}$   & N/A               & $<27.86$          & 11,N/A,21     & 15.14  & $1.50_{0.26}^{0.28}$  \\
+KIC 9955598  & $34.20^{5.64}$   & $-4.934^{0.046}$  & $27.01^{0.10}$    & 11,19,21      & 16.89  & $2.02_{0.44}^{0.49}$  \\
+KIC 9955598  & $20.05^{0.09}$   & $-4.934^{0.046}$  & N/A               & 9,19,N/A      & 16.89  & $1.19_{0.06}^{0.06}$  \\
+Proxima Cen  & $82.60^{1.00}$   & $-5.003^{nan}$    & $28.23^{0.10}$    & 13,17,21      & 118.62 & $0.70_{0.04}^{0.04}$  \\
+Sun          & $27.00^{3.00}$   & $-4.943^{0.042}$  & $26.77^{0.72}$    & N/A,20,21     & 14.45  & $1.87_{0.21}^{0.21}$  \\
+
+\end{longtable}
+\clearpage
+\end{landscape}
 
 
 
