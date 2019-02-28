@@ -14,21 +14,22 @@ The results presented in Chapters \ref{Chapter3} and \ref{Chapter4} investigated
 
 There are several possible methods to determine the rotation period of a star; since the rotation periods considered in this work were collected from the literature and use various methods, they are summarised here for convenience.
 
-The first method may be the most commonly used to determine the rotation period for a star - photometric variation in light curves due to starspots. As discussed in Section \ref{Chp1_starspots}, starspots are observed in light curves as periodic variations in the brightness of star as the starspot rotates in and out of view of the observer. To obtain the stellar rotation period, techniques are used to detect periodicities in the light curve. One such technique is the Lomb-Scargle periodogram \citep{Lomb_1976,Scargle_1982}, which uses a Fourier transform to search for periodicities. Typically, a distribution of peaks will appear in the power spectrum and the period with the largest Lomb-Scargle power will correspond to the rotation period. It is a commonly used technique to determine the stellar rotation period (see e.g. \citealt{do_Nascimento_etal_2014,Nielsen_etal_2013}).
+The first method may be the most commonly used to determine the rotation period for a star - photometric variation in light curves due to starspots. As discussed in Section \ref{Chp1_photosphere}, starspots are observed in light curves as periodic variations in the brightness of star as the starspot rotates in and out of view of the observer. To obtain the stellar rotation period, techniques are used to detect periodicities in the light curve. One such technique is the Lomb-Scargle periodogram \citep{Lomb_1976,Scargle_1982}, which uses a Fourier transform to search for periodicities. Typically, a distribution of peaks will appear in the power spectrum and the period with the largest Lomb-Scargle power will correspond to the rotation period. It is a commonly used technique to determine the stellar rotation period (see e.g. \citealt{do_Nascimento_etal_2014,Nielsen_etal_2013}).
 
 Another technique used to determine periodic variations in light curve is the autocorrelation function (ACF); this method determines how correlated the light curve is with itself when offset by a certain time lag. This can be performed for a range of time lags with repeated spot crossings providing peaks in the ACF at time periods associated with the rotation period. An advantage of this method is that the shape of the periodicity in the light curve is not assumed and thus may be more useful in cases where the modulation is not perfectly sinusoidal. This technique is also fairly common in the literature and has been used for large samples of stars from \textit{Kepler} \citep{McQuillan_etal_2014}.
 
-The second method used to determine stellar rotation periods is long term observations of magnetic activity indicators such as the chromospheric emission from the \caII or \Halpha spectral lines and even X-ray luminosity. It is known that these magnetic activity indicators trace active magnetic regions on the surface, thus if an active region crosses the stellar surface multiple times then the rotation period can be determined from the modulation in the magnetic activity indicator. This technique is ideal for stars with more subtle light curve modulation (e.g. slower rotators) as magnetic activity indicators can trace smaller active regions. Example of this method in the literature include \citet{Boro_Saikia_etal_2016,Robertson_etal_2015_GJ176,DeWarf_etal_2010}.
+The second method used to determine stellar rotation periods is long term observations of magnetic activity indicators such as the chromospheric emission from the \caII or \Halpha spectral lines and even X-ray luminosity. It is known that these magnetic activity indicators trace active magnetic regions on the surface, thus if an active region crosses the stellar surface multiple times then the rotation period can be determined from the modulation in the magnetic activity indicator. This technique is ideal for stars with more subtle light curve modulation (e.g. slower rotators) as magnetic activity indicators can trace smaller active regions. Examples of this method in the literature include \citet{Boro_Saikia_etal_2016,Robertson_etal_2015_GJ176,DeWarf_etal_2010}.
 
 The third method that can be used to determine the rotation period is from asteroseismology. As discussed in Section \ref{Section:intro_ages}, asteroseismology is a valuable tool for determining fundamental parameters through observations of stellar oscillations. However, one aspect not discussed in the previous section is that any departure from solid body rotation will result in a frequency splitting of non-radial oscillation modes; thus the frequency will also depend on the azimuthal order, m. From helioseismology, the analysis of the frequency splitting due to rotation has provided detail about the interior of the Sun and revealed the presence of the tachocline \citep{Spiegel_Zahn_1992} which is instrumental in stellar dynamo theory . However, in order to obtain rotational splitting from asteroseismology, data sets with timescales on the order of years are required. This is due to the amplitude of the frequency splitting which vary from a few micro-Hertz for more massive or younger stars down to a fraction of a micro-Hertz for less massive or older stars. The frequency splitting of p modes in solar-like oscillators are predominantly determined by the rotational profile in the stellar envelope. There is still some debate in the literature about the accuracy of asteroseismic rotation periods (see e.g. \citealt{Barnes_etal_2016_aspect_gyro}), which will be discussed later in this Chapter.
 
 \section{Data and Method}
+\label{Chp5_data_and_method}
 
 The sample of stars considered in this analysis comes from the X-ray luminosity and calcium emission studies conducted in Chapters \ref{Chapter3} and \ref{Chapter4}, respectively. Rotation periods for this sample of stars were searched for in the literature using \textit{VizieR} \citep{Ochsenbein_etal_2000}. In addition to this, literature values for the \Rprime activity indicator were collected for the sample of stars from the X-ray luminosity study. The details of the literature values collected and the relevant references for the sample of stars are shown in Appendix \ref{App_I_activity_rotation}.
 
 Since the sample of stars considered in this work is fairly small, comparison samples from previous activity-rotation studies were also used. To compare the stars with values for the \Rprime indicator, the sample of stars from \citet{Metcalfe_etal_2016} were also plotted. Also, to put the asteroseismic samples into context, data was taken from \citet{Baliunas_etal_1996}. For the X-ray sample, data was taken from \citet{Wright_etal_2011} (W11) used to put the sample into context.
 
-As discussed in Section \ref{Chp2_activity-rotation_lit_review}, the activity-rotation relationship is usually calibrated in terms of Rossby number (\Ro). \Ro is defined as the as the rotation period divided by the convective turnover time (\tauc). In this work, \tauc was calculated using the relations from W11 which was derived empirically. By using an empirical method, it assumes that the activity-rotation relationship can be divided into saturated and non-saturated regimes. W11 divided their sample into bins of $B-V$ colour with approximately equal number of stars in each bin. For each mass bin, the activity-rotation relationship was fitted with Equation \ref{Eq:W11_tauc_method_fit_eq} where $(\frac{L_{x}}{L_{BOL}})_{sat}$ and $P_{sat}$ are fitted for each of the mass bins using the $\beta$ value found in W11.
+As discussed in Section \ref{Chp2_activity-rotation_lit_review}, the activity-rotation relationship is usually calibrated in terms of Rossby number (\Ro). \Ro is defined as the as the rotation period divided by the convective turnover time (\tauc). In this work, \tauc was calculated using the relations from W11 that were derived empirically. By using an empirical method, it assumes that the activity-rotation relationship can be divided into saturated and non-saturated regimes. W11 divided their sample into bins of $B-V$ colour with approximately equal number of stars in each bin. For each mass bin, the activity-rotation relationship was fitted with Equation \ref{Eq:W11_tauc_method_fit_eq} where $(\frac{L_{x}}{L_{BOL}})_{sat}$ and $P_{sat}$ are fitted for each of the mass bins using the $\beta$ value found in W11.
 
 \begin{equation}
     \frac{L_{x}}{L_{BOL}} = 
@@ -60,17 +61,65 @@ The fits from each mass bins were used by W11 to determine the colour dependent 
     \label{Eq:W11_tauc_mass}
 \end{equation}
 
-For the majority of samples considered in this analysis, masses were available and \tauc was calculated using Equation \ref{Eq:W11_tauc_mass}. However, for the sample of stars from \citet{Baliunas_etal_1996}, no masses were available. Therefore, Table 3 from \citet{Pecaut_etal_2012} was used to convert $B-V$ values into $V-K$ values and Equation \ref{Eq:W11_tauc_VK} was used to calculate \tauc. Since the table from \citet{Pecaut_etal_2012} is limited to $B-V < 0.77$, the sample from \citet{Baliunas_etal_1996} was also limited to stars that fell into this range.
+For the majority of the samples considered in this analysis, masses were available and \tauc was calculated using Equation \ref{Eq:W11_tauc_mass}. However, for the sample of stars from \citet{Baliunas_etal_1996}, no masses were available. Therefore, Table 3 from \citet{Pecaut_etal_2012} was used to convert $B-V$ values into $V-K$ values and Equation \ref{Eq:W11_tauc_VK} was used to calculate \tauc. Since the table from \citet{Pecaut_etal_2012} is limited to $B-V < 0.77$, the sample from \citet{Baliunas_etal_1996} was also limited to stars that fell into this range.
 
 \section{Results}
 
-\subsection{Chromospheric emission - rotation}
-From the calcium emission study, eleven stars had rotation periods found in the literature; a further ten stars from the X-ray emission study had literature values for both the rotation period and the \Rprime activity indicator. 
+\subsection{Activity - rotation}
+From the calcium emission study, eleven stars had rotation periods found in the literature; a further ten stars from the X-ray emission study had literature values for both the rotation period and the \Rprime activity indicator. In addition to this, data from \citet{Metcalfe_etal_2016} were used to compare and compliment the stars from the calcium and X-ray studies. Data from \citet{Baliunas_etal_1996} was also used to place the sample of old, slowly rotating stars with known ages into context.
 
+Figure \ref{fig:rhk_v_rot} shows the \Rprime activity indicator as a function of rotation period for the sample of stars considered in this work. Stars from \citet{Baliunas_etal_1996}, \citet{Metcalfe_etal_2016} and my sample of stars are denoted by triangle, cross and circle symbols, respectively. Furthermore, the \citet{Metcalfe_etal_2016} data and the sample of stars considered in this work are presented by spectral type; F-type stars are shown in blue, G-type stars in green, K-type stars in orange and M-type stars in red. Figure \ref{fig:rhk_v_rot} shows that, as expected, there is a fair amount of scatter in the rotation period for a given activity level. Calculating the Pearson coefficient for the \citet{Baliunas_etal_1996} sample gives a value of $-0.59$, indicating that there is a negative correlation between the two parameters but they are not perfectly anti-correlated. The sample of stars from this work and \citet{Metcalfe_etal_2016} also follow a similar trend and generally agree with the \citet{Baliunas_etal_1996} sample. The exception to this is the M-type stars that have extremely long rotation periods, which is to be expected since they stay on the main sequence for much longer than F, G or K stars and therefore have much longer spin-down timescales.
 
-\subsection{X-ray luminosity - rotation}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{Figures/5-Activity_rotation/Rhk_v_prot.pdf}
+    \caption[\Rprime indicator as a function of rotation period]{Plot of the \Rprime indicator as a function of rotation period. Stars from \citet{Metcalfe_etal_2016} and this work are divided into the relevant spectral type.}
+    \label{fig:rhk_v_rot}
+\end{figure}
+
+In line with previous activity-rotation studies \citep{Mamajek_Hillenbrand_2008,Metcalfe_etal_2016} we consider the Rossby number instead of rotation period, as shown in Figure \ref{fig:rhk_v_ro}. Note that in order to calculate \Ro for the \citet{Baliunas_etal_1996} sample, the sample was limited to $B-V < 0.77$ as discussed in Section \ref{Chp5_data_and_method}. As expected, the Pearson coefficient value of $-0.66$ shows a stronger negative correlation between the \Rprime indicator and \Ro for the limited \citet{Baliunas_etal_1996} sample of stars. Despite the use of \Ro, there is still a significant spread in \Ro for a given activity level, particularly for low activity levels. Figure \ref{fig:rhk_v_ro} also shows the activity-rotation relationship from \citet{Mamajek_Hillenbrand_2008} (MH08) for comparison, this relationship is valid in the range $-5.0 < \log(R^{'}_{HK}) < -4.3$. The MH08 activity-rotation relationship seems to describe the high activity level for a given Rossby number fairly well. However, there are many lower activity stars that cannot be accurately described by the MH08 relationship. There could be several reasons for this; one possibility is that the MH08 relationship is biased towards more active stars that have detectable light curve modulation due to starspots. Alternatively, as discussed in Section \ref{Chp4_discussion}, the stellar metallicity has an effect on the value of the \Rprime indicator calculated therefore it could be possible that some of this scatter in \Ro for a given activity level is due to metallicity effects.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{Figures/5-Activity_rotation/rhk_v_r0.pdf}
+    \caption[\Rprime indicator as a function of \Ro]{Plot of the \Rprime indicator as a function of \Ro. The activity-rotation relationship from \citet{Mamajek_Hillenbrand_2008} is shown in black for reference.}
+    \label{fig:rhk_v_ro}
+\end{figure}
+
+%There are several stars considered in this work that are also present in the \citet{Metcalfe_etal_2016} sample, these are KIC 9139151, KIC 9955598, KIC 10454113 and KIC 10963065. Table \ref{tab:duplicate_stars_m16_diff} shows the absolute differences in their activity and rotation measurements from the sources used in this work and the values presented in \citet{Metcalfe_etal_2016}. Generally, there is good agreement between the activity and rotation parameters used in the two studies.
+
+% \begin{table}[]
+%     \centering
+%     \renewcommand{\arraystretch}{1.2}
+%     \begin{tabular}{lcc}
+%         \hline
+%         Star & $|\Delta\log R^{'}_{HK}|$ & $|\Delta P_{rot}|$ / days \\
+%         \hline
+%         KIC 9139151 & 0.107 & 1.260 \\
+%         KIC 9955598 & 0.114 & 0.00 \\
+%         KIC 10454113 & 0.031 & 0.162 \\
+%         KIC 10963065 & 0.035 & 0.380 \\
+%         \hline
+%     \end{tabular}
+%     \caption{Stars that are present in both the sample considered in this work and in \citet{Metcalfe_etal_2016}. The absolute value of the differences in the activity and rotation parameters are shown.}
+%     \label{tab:duplicate_stars_m16_diff}
+% \end{table}
+
+In addition to the calcium 
+Twelve stars from the X-ray study \citep{Booth_etal_2017} with determined X-ray luminosities (i.e. not upper limit results) were found to have rotation periods in the literature. This stellar sample is plotted as a function of \Ro alongside the W11 sample of stars as shown in Figure \ref{fig:lx_v_ro}. This plot shows that the sample of old, inactive stars generally lie in the unsaturated regime of the activity-rotation relationship, as expected. However, our sample tends to lie on the lower activity end of the scatter in the activity-rotation relationship. \textcolor{red}{Insert here that more in agreement with beta=-2.7 slope if I put that relationships in Fig 5.3}. The inclusion of the old, inactive sample of stars cannot confirm the potential steepening of the activity-rotation relationship as suggested by \citet{Booth_etal_2017}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.95\textwidth]{Figures/5-Activity_rotation/lx_v_R0.pdf}
+    \caption[$L_{x}$ as a function of \Ro]{X-ray luminosity normalised by stellar surface area as a function of \Ro for the sample of stars from the X-ray study with literature rotation periods. The sample from \citet{Wright_etal_2011} is plotted for comparison.}
+    \label{fig:lx_v_ro}
+\end{figure}
 
 \subsection{Rotation - age}
+The collection 
+
+
+
 
 \section{Discussion}
 
