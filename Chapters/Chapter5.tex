@@ -11,6 +11,7 @@
 The results presented in Chapters \ref{Chapter3} and \ref{Chapter4} investigated the age-activity relationship through coronal and chromospheric emission. However, the age-activity relationship is a consequence of magnetic braking that removes angular momentum from the star on the main sequence. Thus, the age-activity relationship is inherently link to the rotational evolution. As discussed in Section \ref{Chp2_activity-rotation_lit_review}, this has led to studies on the activity-rotation relationship (see e.g. \citealt{Pizzolato_etal_2003,Wright_etal_2011}). The aim of this study was to collect literature values for the rotation period of the sample of stars considered in the two previous studies and investigate the activity-rotation relationship.
 
 \subsection{Determining rotation periods}
+\label{Chp5_Prot_methods}
 
 There are several possible methods to determine the rotation period of a star; since the rotation periods considered in this work were collected from the literature and use various methods, they are summarised here for convenience.
 
@@ -66,6 +67,8 @@ For the majority of the samples considered in this analysis, masses were availab
 \section{Results}
 
 \subsection{Activity - rotation}
+\label{Chp5_results_activity_rotation}
+
 From the calcium emission study, eleven stars had rotation periods found in the literature; a further ten stars from the X-ray emission study had literature values for both the rotation period and the \Rprime activity indicator. In addition to this, data from \citet{Metcalfe_etal_2016} were used to compare and compliment the stars from the calcium and X-ray studies. Data from \citet{Baliunas_etal_1996} was also used to place the sample of old, slowly rotating stars with known ages into context.
 
 Figure \ref{fig:rhk_v_rot} shows the \Rprime activity indicator as a function of rotation period for the sample of stars considered in this work. Stars from \citet{Baliunas_etal_1996}, \citet{Metcalfe_etal_2016} and my sample of stars are denoted by triangle, cross and circle symbols, respectively. Furthermore, the \citet{Metcalfe_etal_2016} data and the sample of stars considered in this work are presented by spectral type; F-type stars are shown in blue, G-type stars in green, K-type stars in orange and M-type stars in red. Figure \ref{fig:rhk_v_rot} shows that, as expected, there is a fair amount of scatter in the rotation period for a given activity level. Calculating the Pearson coefficient for the \citet{Baliunas_etal_1996} sample gives a value of $-0.59$, indicating that there is a negative correlation between the two parameters but they are not perfectly anti-correlated. The sample of stars from this work and \citet{Metcalfe_etal_2016} also follow a similar trend and generally agree with the \citet{Baliunas_etal_1996} sample. The exception to this is the M-type stars that have extremely long rotation periods, which is to be expected since they stay on the main sequence for much longer than F, G or K stars and therefore have much longer spin-down timescales.
@@ -115,6 +118,7 @@ Twelve stars from the X-ray study \citep{Booth_etal_2017} with determined X-ray 
 \end{figure}
 
 \subsection{Rotation--age}
+\label{Chp5_results_rotation_age}
 The collection of literature rotation periods for the sample of stars from the X-ray and calcium emission studies also gives the opportunity to investigate the rotation--age relationship. In total, 29 stars from the calcium and X-ray studies have literature rotation periods that are shown in Figure \ref{fig:full_sample_prot_v_age} alongside additional data from \citet{Metcalfe_etal_2016}. Since stellar spin-down is inherently dependent on the mass of the star, the sample was divided into the relevant spectral types for further investigation. 
 
 \begin{figure}
@@ -157,7 +161,7 @@ Figure \ref{fig:g_prot_v_age} shows the sample of G-type stars along with the cl
     \label{fig:g_prot_v_age}
 \end{figure}
 
-Figure \ref{fig:k_prot_v_age} shows the sample of K-type stars along with the cluster data and the \citet{Barnes_2007} relationship. Only three stars in the sample are K dwarfs and are sufficiently diverse in age to accurately perform an ODR fit. It is interesting to note that the M67 K-type stars seem to lie below the gyrochronology relationship.
+Figure \ref{fig:k_prot_v_age} shows the sample of K-type stars along with the cluster data and the \citet{Barnes_2007} relationship. Only three stars in the sample are K dwarfs and are sufficiently diverse in age to accurately perform an ODR fit. It is interesting to note that the M67 K-type stars seem to lie below the gyrochronology relationship, this could be due to the difficulty of retrieving longer rotation periods from \textit{K2} data as discussed by \citet{Esselstein_etal_2018}.
 
 \begin{figure}
     \centering
@@ -166,13 +170,6 @@ Figure \ref{fig:k_prot_v_age} shows the sample of K-type stars along with the cl
     \label{fig:k_prot_v_age}
 \end{figure}
 
-Lastly, Figure \ref{fig:m_prot_v_age} shows the M-type stars along with the cluster data from the Praesepe cluster, the \citet{Barnes_2007} relationship and the ODR best-fitting relationship. The best-fitting relationship as found by the ODR method is shown in Equation \ref{Eq:m_stars_ODR}. The Praesepe cluster data from \citet{Douglas_etal_2017} was focused on low-mass stars, hence the large number of data points from the cluster in Figure \ref{fig:m_prot_v_age}. The M-type stars in Praesepe also have a large range of rotation periods which is not surprising given that M-type stars take the longest time to converge onto the 'I' sequence to use the terminology from \citet{Barnes_2003}. One may also question the validity of the gyrochronology relationship at these low masses. The \citet{Barnes_2007} relationship was calibrated to a $B-V \approx 1.6$ and the average $B-V$ value of the M-type stars in the sample is $1.65$. Therefore, the gyrochronology may not be accurate in this regime.
-
-\begin{equation}
-    \log(P_{rot}) = (0.85 \pm 0.11)\log(t) - (6.41 \pm 1.04)
-    \label{Eq:m_stars_ODR}
-\end{equation}
-
 \begin{figure}
     \centering
     \includegraphics[width=0.95\textwidth]{Figures/5-Activity_rotation/m_prot_v_age.pdf}
@@ -180,7 +177,56 @@ Lastly, Figure \ref{fig:m_prot_v_age} shows the M-type stars along with the clus
     \label{fig:m_prot_v_age}
 \end{figure}
 
+Lastly, Figure \ref{fig:m_prot_v_age} shows the M-type stars along with the cluster data from the Praesepe cluster, the \citet{Barnes_2007} relationship and the ODR best-fitting relationship. The best-fitting relationship as found by the ODR method is shown in Equation \ref{Eq:m_stars_ODR}. Note that since the M dwarf stellar sample consits of only three data points, the ODR fit may not be representative of a larger stellar sample. The Praesepe cluster data from \citet{Douglas_etal_2017} was focused on low-mass stars, hence the large number of data points from the cluster in Figure \ref{fig:m_prot_v_age}. The M-type stars in Praesepe also have a large range of rotation periods which is not surprising given that M-type stars take the longest time to converge onto the 'I' sequence to use the terminology from \citet{Barnes_2003}. One may also question the validity of the gyrochronology relationship at these low masses. The \citet{Barnes_2007} relationship was calibrated to a $B-V \approx 1.6$ and the average $B-V$ value of the M-type stars in the sample is $1.65$. Therefore, the gyrochronology may not be accurate in this regime.
+
+\begin{equation}
+    \log(P_{rot}) = (0.85 \pm 0.11)\log(t) - (6.41 \pm 1.04)
+    \label{Eq:m_stars_ODR}
+\end{equation}
+
+
+
 \section{Discussion}
+
+\subsection{Rotation--age relationship}
+The rotation--age relationships presented in Section \ref{Chp5_results_rotation_age} show that the best--fitting relationships found for the sample of old, inactive stars are not in agreement with the the slower rotators in the sample or the cluster data. However, the \citet{Barnes_2007} relationship is generally in agreement with the cluster data and the slower rotators in the sample. This result could be interpreted in two different ways, either the data suggests that older stars spin faster than expected similar to the conclusion made by \citet{van_Saders_etal_2016} or that the rotation periods collected are biased towards to faster stellar rotators.
+
+The conclusion that the stellar sample are biased towards faster rotators is a valid concern especially considering that the rotation periods for the majority of the sample stem from light curve modulation caused by starspots. This method in particular is biased towards short rotation periods as it requires a detectable signal caused by fairly large starspots. As stars age and start to spin down, longer timescales are needed to detect variability due to starspots. In addition to this, older stars have fewer and smaller starspots \textcolor{red}{REF?} making measurement of the rotation period via this method even more difficult.
+
+To test the hypothesis that older stellar samples are biased towards faster rotators, alternative methods of determining the stellar rotation period are needed. One alternative method is the long-term monitoring of magnetic activity indicators such as the \Rprime indicator. Since the \Rprime indicator traces areas of magnetic activity such as plage \citep{Leighton_1959}, precise calculation of this indicator coupled to observations over several rotation periods can yield the rotation period. This method has been used to determine the rotation for several of the stars considered in this work, particularly for stars that have longer rotation periods \citep{Boro_Saikia_etal_2016,Vaughan_etal_1981,Robertson_etal_2015_GJ191}. This method requires a number of observations over the timescale of several rotation periods to ensure that the \Rprime indicator is sampled sufficiently to accurately determine the rotation period. However, this method also has the advantage of gaining information about the variability of the magnetic activity over a longer timescale.
+
+An alternative method for determining the stellar rotation period is from asteroseismology. Departures from solid body rotation result in frequency splitting of non-radial oscillation modes and thus the frequency is also dependent on the azimuthal order, m. As discussed in Section \ref{Chp5_Prot_methods}, the frequency splitting of p modes observed in main--sequence stars are largely determined by the rotation profile in the stellar envelope. This is an important aspect of this method, if the stellar rotation period determined from asteroseismology is not the stellar surface rotation, can it be used in gyrochronology relationships? It is this question that makes asteroseismic rotation periods controversial \citep{Barnes_etal_2016_aspect_gyro}. However, some asteroseismology studies find good agreement between the rotation periods determined from asteroseismology and other surface rotation measures \citep{Chaplin_etal_2013,Gizon_etal_2013}. This includes \citet{Davies_etal_2015} who determined the rotation periods for 16 Cyg A \& B from asteroseismology. As an independent validation, they also performed the same analysis on solar data by adding white noise comparable to that found for the stellar data. They find that the asteroseismic rotation for the Sun to be $28.2^{+0.9}_{-1.0}$~days which is consistent with the Carrington rotation period of $27.28$~days. \citet{Davies_etal_2015} suggest that the agreement may be because of an absence of significant differential rotation. They conclude that for 16 Cyg A, the asteroseismic rotation is comparable to surface rotation on the assumption that there is an absence of strong radial differential rotation. Therefore, care needs to be taken when considering asteroseismic rotation periods.
+
+\subsection{Activity-rotation relationship}
+In Section \ref{Chp5_results_activity_rotation}, the literature rotation periods were used to investigate the activity--rotation relationship for the sample of old, inactive stars. Two activity indicators, calcium and X-ray emission, were considered and here I will discuss the results in the context of recent observational and theoretical studies.
+
+The \Rprime activity indicator was plotted as a function of Rossby number in Figure \ref{fig:rhk_v_ro}. This plot shows that there is significant scatter in the \Rprime--\Ro relationship, this is partly due to mass since this will influence the timescale of the stellar spin-down. However, as discussed in Chapter \ref{Chapter4}, metallicity has a significant effect on the value of the \Rprime activity indicator. This may explain why the activity-rotation from \citet{Mamajek_Hillenbrand_2008} does not fully describe the full sample of old stars or the sample from \citet{Baliunas_etal_1996}.
+
+Figure \ref{fig:lx_v_ro} showed the X-ray luminosity as a function of Rossby number, this clearly showed that the old sample of stars is in general agreement with the previous study by \citet{Wright_etal_2011}. \textcolor{red}{The old sample of stars may be more in favour for a slope of -2.7 for the activity-rotation relationship as \citet{Wright_etal_2011} found for a small, unbiased sample of their data. -- Confirm this once I put slopes in Fig 5.3.} While the old sample of stars considered in this work may give more evidence towards a slight steepening of the activity--rotation relationship, this amount of change in the slope would not be sufficient by itself to warrant the steepening of the X-ray luminosity--age relationship presented in Chapter \ref{Chapter3}. In addition to this, with the report of weakened magnetic braking for older stars \citep{van_Saders_etal_2016}, the slope of the activity--rotation relationship would have to increase further to explain the result in Chapter \ref{Chapter3}. 
+
+This result would indicate that an alternative method is responsible for the steepening of the age--activity relationship. One possible 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
