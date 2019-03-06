@@ -48,7 +48,24 @@ The rotation--age relationship was also investigated by considering the relation
 
 The conclusions of the work presented in this thesis has shown that the age-activity-rotation relationship may be more complicated than previously thought. To fully understand the cause behind this change, more studies combining all three parameters will be required. To achieve this, there are several factors that will be important to consider.
 
+\subsection{Stellar rotation periods}
+
+Traditionally, the rotation periods of stars have been calculated by considering the light curve modulation caused by star spots (e.g. \citealt{McQuillan_etal_2014}). This method is best suited to stars that have large variability and short rotation periods, making the method more difficult to use for older, less active stars. Therefore, the question must be asked, how do we determine the rotation periods for these older stars? With effort, perhaps rotation periods could be achieved through light curve modulation. One issue is that the data collection would have to occur over an appropriate time scale; to observe a solar-like rotation period several times would necessitate time scales of several months. In addition to this, the observations need to be of sufficient precision to observe small changes in the light curve which would suggest that they would need to be performed by a space telescope. However, space telescopes typically do not have the necessary time scales to observe the rotation periods of the slowest rotators as noted by \citet{Barnes_etal_2016} and shown in \citet{Esselstein_etal_2018}. Furthermore, as shown by \citet{van_Saders_etal_2019}, there seems to be an edge in the distribution of rotation periods in the \textit{Kepler} and occurs at a Rossby number of $2.08$. This could be caused by an absence of long-period, high Rossby number stars or they simply go undetected. To test which of these hypotheses is true, alternative methods of determining the rotation period will be needed.
+
+One possible alternative method of calculating stellar rotation periods is through monitoring of magnetic activity indicators such as the \caII or \Halpha lines \citep{Boro_Saikia_etal_2016,Robertson_etal_2015_GJ176}. This method still relies on the presence of active regions but they do not need to be as large to still be detected. Since magnetic activity indicators are more sensitive to changes in the stellar magnetic field than photometric variation, smaller active regions should be able to be detected and the rotation period can be determined. 
+
+Another possible method of determining rotation periods for older stars is from the modelling of rotational splitting of asteroseismic oscillation frequencies (see e.g. \citet{Davies_etal_2015}). In order to obtain the rotation period, high quality data is needed over a long timescale, but with current and future space telescopes such as \textit{TESS} and \textit{PLATO} the opportunity for asteroseismic analysis like this will increase. However, the main concern with asteroseismology is the comparison with rotation periods determined from surface rotation. The rotation period determined from asteroseismology is a measure of the internal rotation in the star, however, there are studies who have found good agreement between asteroseismic and surface rotation periods \citet{Chaplin_etal_2013,Gizon_etal_2013}. \citet{Davies_etal_2015} suggest that the trivial solution to this is that there is an absence of significant differential rotation. Therefore, if asteroseismic rotation periods are to be used, this must be taken into consideration.
+
+While both of the alternative methods discussed above require significant observational resources, the techniques used also provide additional parameters that are useful for calibrating the age--activity--rotation relationship. Long term monitoring of magnetic activity will also provide an averaged value of the magnetic activity over the observation timescale. Magnetic activity varies over many timescales and multiple epochs are desirable for studies concerning stellar magnetic activity. Asteroseismic observations yield fundamental parameters including mass, radius and age. In any case, further work needs to be done to determine if there is a physical mechanism or simply sample biases that creates the lack of long period, high Rossby number stars as seen in \citet{van_Saders_etal_2019}.
+
+\subsection{Stellar magnetic activity}
+
+Currently, the overlap between stars with ages and the appropriate observations required to calculate magnetic activity indicators is still fairly small. While this will improve as the number of stars with ages increases (see Section \ref{Chp6_future_ages}), further observations may be required. Particularly when considering the X-ray luminosity as an activity indicator, observations at multiple epochs are desirable as this can vary by an order of magnitude over a stellar activity cycle.
+
+Considering the \Rprime activity indicator as an activity indicator for the age--activity relationship, extra care will need to be taken when considering stars of varying spectral type. As discussed in Chapter \ref{Chapter4}, metallicity has an effect of the value of \Rprime calculated. There are a couple of options to overcome this, firstly, the AMMAR \citep{Lorenzo_Oliveira_etal_2016} needs to be improved and considered for samples with varying spectral types. An alternative method would be to select samples carefully to ensure similar masses and metallicity, this has already proved to be a useful technique to investigate the age--activity relationship for older ages \citep{dos_Santos_etal_2016,Lorenzo_Oliveira_etal_2018}.
+
 \subsection{Stellar ages}
+\label{Chp6_future_ages}
 
 The fact still remains that ages of stars are difficult to calculate, however progress has been made to determine the ages of older, main sequence stars and to use those ages to calibrate the age--activity--rotation relationship.
 
@@ -56,24 +73,4 @@ Over the past $\approx 10$ years, efforts have been made to study older clusters
 
 However, the field of asteroseismology is still fairly young, the number of solar-like oscillators detected was only significantly increased by space missions such as \textit{CoRoT} and \textit{Kepler}. In order to determine precise ages for asteroseismic targets, detailed modelling of individual oscillation frequencies are required which has been achieved within the past few years (see e.g. \citealt{Silva_Aguirre_etal_2017}). One disadvantage is that the sample sizes with asteroseismic ages for age-activity-rotation relationships remain fairly small as demonstrated by the work presented in this thesis. \textit{TESS}, which is currently active, is expected to increase the number of stars with detected oscillations by an order of magnitude \citep{Schofield_etal_2019}. This sample of stars will also include exoplanet hosts and main sequence stars \citep{Campante_etal_2016}. The \textit{TESS} coverage of the sky is much larger than the \textit{Kepler}/\textit{K2} fields - it will survey over 85\% of the sky during the first two years of the mission. It will also observe stars that are much brighter than Kepler by several magnitudes; this will allow for asteroseismic analysis of near-by solar type stars that will have complementary data providing strong constraints for calculation of stellar ages.
 
-The era of large samples of stellar ages is yet to come, progress with \textit{TESS} is underway with the first \textit{TESS} detection of an exoplanet host with asteroseismic analysis \citep{Huber_etal_2019}. Further progress will be made with the \textit{PLATO} mission \citep{Rauer_etal_2014} that is being designed with the core science goals to determine planet radii and masses along with accurate ages for these systems through asteroseismology.
-
-\subsection{Stellar rotation periods}
-
-\textcolor{red}{Edit and finish this section}
-
-Traditionally, the rotation periods of stars have been calculated by considering the light curve modulation caused by star spots (e.g. \citealt{McQuillan_etal_2014}). This method is best suited to stars that have large variability and short rotation periods, making the method more difficult to use for older, less active stars. Therefore, the question must be asked, how do we determine the rotation periods for these older stars? With effort, perhaps rotation periods could be achieved through light curve modulation. One issue is that the data collection would have to occur over an appropriate time scale; to observe a solar-like rotation period several times would necessitate time scales of several months. In addition to this, the observations need to be of sufficient precision to observe small changes in the light curve which would suggest that they would need to be performed by a space telescope. However, space telescopes typically do not have the necessary time scales to observe the rotation periods of the slowest rotators as noted by \citet{Barnes_etal_2016} and shown in \citet{Esselstein_etal_2018}.
-
-Another possible method of determining rotation periods for older stars is from the modelling of rotational splitting of asteroseismic oscillation frequencies (see e.g. INSERT REFS). However, there is some debate over the the use of asteroseismic rotation periods and whether they can be compared to surface rotation periods. 
-
-\subsection{Stellar magnetic activity}
-
-
-
-
-
-
-
-
-
-
+The work presented in this thesis is just the beginning for utilising asteroseismic ages to calibrate the age--activity--rotation relationship, the era of large samples of stellar ages is yet to come. Progress with \textit{TESS} is underway with the first \textit{TESS} detection of an exoplanet host with asteroseismic analysis \citep{Huber_etal_2019}. Further progress will be made with the \textit{PLATO} mission \citep{Rauer_etal_2014} that is being designed with the core science goals to determine planet radii and masses along with accurate ages for these systems through asteroseismology.
