@@ -46,7 +46,7 @@ While ages have been derived for these systems by \citet{Garces_etal_2011}, more
 
 The third source includes individually selected stars with archival X-ray observations and relatively well known ages through various methods. These age methods include asteroseismology (16 Cyg A and B, $\alpha$ Cen / Promixa Cen system), isochrone fitting (61 Cyg A and B) and association with a subpopulation of stars in the galaxy (HR 7703). The Sun is also included in the sample. For the full details on the sample of stars used in this study and the various age methods used, see Appendix \ref{App_lx_results}. One may wonder why Proxima Cen is included in this analysis, as it is a fully convective star, and previous discussion on the age--activity--rotation relationship was focused on stars with a stellar--like dynamo (i.e. stars that have radiative core surrounded by a convective envelope). However, recent work by \citet{Wright_Drake_2016} considered a sample of fully--convective stars and found that they follow an activity-rotation relationship that is indistinguishable to that of solar-type stars. Since the activity-rotation relationship is a well established proxy for the behaviour of the solar-like dynamo, this results suggest that these fully convective stars exhibit a solar-like dynamo and therefore Proxima Cen was included in the sample.
 
-For stars with exoplanets in close orbits, effects on the stellar activity through star--planet interaction are expected from theoretical considerations \citep{Cuntz_etal_2000} and have been observed for some systems with high--mass exoplanets in very close orbits (see e.g. \citealt{Poppenhaeger_Wolk_2014,Pillitteri_etal_2015}). However, in our sample there are no stars with hot Jupiters present, therefore such effects are not expected to play a role in this investigation.
+For stars with exoplanets in close orbits, effects on the stellar magnetic activity through star--planet interaction are expected from theoretical considerations \citep{Cuntz_etal_2000} and have been observed for some systems with high--mass exoplanets in very close orbits (see e.g. \citealt{Poppenhaeger_Wolk_2014,Pillitteri_etal_2015}). However, in our sample there are no stars with hot Jupiters present, therefore such effects are not expected to play a role in this investigation.
 
 \subsection{Distances and spectral types}
 \label{Section_Xray_distances_and_spectype}
@@ -75,11 +75,12 @@ In order to determine the X-ray luminosity of a star, the distance is required. 
 %Comparison between DR1 and DR2
 This work was conducted before the release of \textit{Gaia} DR2 \citep{Gaia_collaboration_2018}, that contains parallaxes based only on \textit{Gaia} and is no longer reliant on the Tycho-2 catalogue. Here, a comparison between the distances used in this analysis and the distances from \textit{Gaia} DR2 is presented. Parallaxes for 22 out of 24 stars were found in the \textit{Gaia} DR2 archive; no comparison for the Sun is required and Alpha Cen B was not found in the \textit{Gaia} DR2 archive. The distances used in this analysis and the distances calculated from \textit{Gaia} DR2 parallaxes are shown in Table \ref{Table:distance_comparison}. The typical discrepancy between the two distances is less than 1 pc; some stars have larger differences but these stars are upper limits in our analysis, and thus have no impact on the best-fitting relationship found in this work.
 
-\begin{table}
+\begin{table}[t]
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lccccc}
 \hline
-Name             & Distance / pc & \textit{Gaia} DR2 parallax /mas & \textit{Gaia} DR2 distance / pc & Difference & Distance Source   \\
+Name             & Distance & \textit{Gaia} DR2 parallax & \textit{Gaia} DR2 distance & Difference & Distance Source   \\
+& / pc & /mas & / pc&&\\
 \hline
 16 Cyg A         & 21.29         & 47.28                  & 21.15                  & 0.14       & 1                 \\
 16 Cyg B         & 21.22         & 47.28                  & 21.15                  & 0.07       & 1                 \\
@@ -177,14 +178,14 @@ The typical exposure time for an X-ray observation is on the order of 10 ks ($\a
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.5]{Figures/3-Xray_age/proxima_cen_lc.pdf}
+    \includegraphics[scale=0.55]{Figures/3-Xray_age/proxima_cen_lc.pdf}
     \caption[X-ray light curve of Proxima Centauri]{X-ray light curve of Proxima Centauri. This plot shows the count rate during the observation and would suggest that several flares occurred during this time.}
     \label{fig:proxima_cen_lc}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.5]{Figures/3-Xray_age/HR7703_lc.pdf}
+    \includegraphics[scale=0.55]{Figures/3-Xray_age/HR7703_lc.pdf}
     \caption[X-ray light curve of HR 7703]{X-ray light curve of HR 7703. This plot shows the count rate during the observation and would suggest that a flare occurred towards the end of this observation.}
     \label{fig:HR7703_lc}
 \end{figure}
@@ -208,6 +209,7 @@ For X-ray sources with significant detections and where the source region contai
 Since all of the stars considered in this sample are located nearby, the redshift was fixed at zero; the abundances were assumed to be solar by using abundances from \citet{Grevesse_Sauval_1998}. Using solar abundances is a reasonable approximation for fairly low-resolution spectra as no significant spectral features are resolved that are highly dependent on the stellar metallicity. Therefore, the two parameters that were fitted were coronal temperature and norm; however in some cases, two temperature components were required to find a suitable fit for the coronal spectrum. The \texttt{XSPEC} fitting software uses a modified Levenberg-Marquardt algorithm to minimise the fit statistic and is based on \texttt{CURFIT} from \citet{Bevington_1969}. However, the Levenberg-Marquardt algorithm only finds the local minimum, which is not necessarily the global minimum; therefore, the initial conditions for each parameter that is to be fitted must be reasonable guesses. From the best-fitting model to each object, the flux was then calculated in a fixed energy band from 0.2 to 2 keV. The details and plots of the best-fitting models are shown in Table \ref{table:spectral_fit_details} and Appendix \ref{Appendix_Xray_spectra}, respectively.
 
 \begin{table}
+\resizebox{\textwidth}{!}{
 \centering
 \begin{tabular}{l c c c}
 	\hline
@@ -227,7 +229,7 @@ Since all of the stars considered in this sample are located nearby, the redshif
 	61 Cyg B & 0.19 & $1.71\times 10^{-4}$ & 1.17\\
 	& 0.67 & $5.06\times 10^{-4}$  &\\
 	\hline
-	\end{tabular}
+	\end{tabular}}
 	\caption[X-ray spectral modelling results]{Best-fitting model parameters used to calculate the X-ray flux between 0.2 and 2.0 keV for stars that were sufficiently detected in X-rays.}
 	\label{table:spectral_fit_details}
 \end{table}
@@ -277,7 +279,7 @@ In the previous section, the general methodology used to determine the X-ray lum
 
 \textit{KIC 12011630, KIC 3123191 and KIC 5309966}: These stars were in the field of view of \Chandra during observations of other targets and are all undetected in X-rays. The sources are located on front-illuminated CCD's and are far from the centre of the field of view. Since \Chandra's PSF becomes large at the edges of the field of view, large extraction regions had to be used, which led to quite high upper limits for the X-ray luminosities for these stars.
 
-\textit{KIC 10016239 and KIC 7529180}: These stars were detected with \XMM. KIC 7529180 was detected with a sufficient number of source counts for a spectral fit to be performed. For KIC 10016239, the excess source counts were used to calculate the X-ray flux through WebPIMMS, assuming a coronal temperature of $\log T = 6.5$.
+\textit{KIC 10016239 and KIC 7529180}: These stars were detected with the \XMM telescope. KIC 7529180 was detected with a sufficient number of source counts for a spectral fit to be performed. For KIC 10016239, the excess source counts were used to calculate the X-ray flux through WebPIMMS, assuming a coronal temperature of $\log T = 6.5$.
 
 \textit{KIC 6116048, KIC 6603624, KIC 8292840, KIC 9025370, KIC 9410862}: These stars were observed with \XMM, but undetected in X-rays.
 
@@ -317,7 +319,6 @@ Figure \ref{fig:Lx_normalise_schmitt_data} shows the comparison between X-ray lu
 Therefore, the X-ray luminosities of the sample of cool, inactive stars considered in this work were normalised by the stellar surface area, as this allowed for a combined analysis of the full sample to be performed. The stellar radii for the stars in the sample were taken either from asteroseismology or calculated using the same technique described previously for the \citet{Schmitt_Liefke_2004} sample using absolute brightness and effective temperature. In order to have normalised X-ray luminosities with familiar values, the stellar surface was normalised not in units of centimetres, but relative to the solar surface. This leads to normalised X-ray luminosities around $10^{27}$~erg\,s$^{-1}$\,$R_\odot^{-2}$.
 
 \subsection{Fitting the data}
-In total, 24 stars were fully analysed and are shown in Figure \ref{fig:Xray_sample}; the details of the X-ray luminosity determined for each star and stellar properties are listed in Appendix \ref{App_lx_results} and \ref{App_Xray_sample_stellar_properties}, respectively. 
 
 \begin{figure}[ht]
     \centering
@@ -325,6 +326,8 @@ In total, 24 stars were fully analysed and are shown in Figure \ref{fig:Xray_sam
     \caption[Plot of normalised X-ray luminosity as a function of age]{Logarithmic plot of normalised X-ray luminosity as a function of stellar age for the data analysed in this work; specifically, the quantity on the vertical axis is $\log\frac{L_{x}}{(R_\ast/R_\odot)^{2}}$. Upper limits are indicated by downward triangles and lighter colours. The black line represents the best-fitting relationship found.}
     \label{fig:Xray_sample}
 \end{figure}
+
+In total, 24 stars were fully analysed and are shown in Figure \ref{fig:Xray_sample}; the details of the X-ray luminosity determined for each star and stellar properties are listed in Appendix \ref{App_lx_results} and \ref{App_Xray_sample_stellar_properties}, respectively.
 
 The majority of the sample stars have asteroseismic ages: only eight of the sample have ages determined from other methods such as isochrone placement, white dwarf cooling times or association with a sub-population of stars in the galaxy. Ten stars in the sample have upper limits to their X-ray luminosities. The small number of X-ray detections demonstrates how difficult both the asteroseismic and X-ray measurements are. High-precision light-curves sampled at short cadences do not necessarily guarantee a precise measurement of age from asteroseismology. Even when a well-constrained age is determined, it does not guarantee an X-ray detection as significant resources are needed to observe main sequence stars in the X-ray regime. Figure \ref{fig:Xray_sample} shows that the X-ray luminosity decreases with age as expected, but to gain more insight into the timescale of this decrease the best-fitting relationship for the data was found.
 
@@ -335,7 +338,7 @@ Measurement errors are present in both the stellar age and the X-ray luminosity;
 	\label{Eq:best_fit_xray_age}
 \end{equation}
 
-\begin{figure}[h]
+\begin{figure}[t]
     \centering
     \includegraphics[width=0.9\textwidth]{Figures/3-Xray_age/full_xray_results.pdf}
     \caption[Plot of X-ray sample with best-fitting relationship and cluster data for reference]{Plot showing the data analysed in this work alongside the cluster data from \citet{Jackson_etal_2012}. The quantity on the vertical axis is $\log\frac{L_{x}}{(R_\ast/R_\odot)^{2}}$. Upper limits are indicated by downward triangles and lighter colours. The black line indicates the best--fitting age--activity relationship found for data analysed in this work.}
